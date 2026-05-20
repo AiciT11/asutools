@@ -1,9 +1,23 @@
-# asuTools
+<h1 align="center">
+  <img src="asutools/resources/icon.png" alt="asuTools" width="140"><br>
+  asuTools
+</h1>
 
-> 极简本地工具启动器 · macOS · PyQt6
-> iTerm 风黑白主题 · 多环境识别 · 每工具独立绑定运行环境
+<p align="center">
+  <b>极简本地工具启动器 · macOS · PyQt6</b><br>
+  iTerm 风黑白主题 · 多环境识别 · 每工具独立绑定运行环境
+</p>
 
-![icon](asutools/resources/icon.png)
+<p align="center">
+  <a href="https://github.com/lsdogXG/asutools/releases/latest"><img src="https://img.shields.io/github/v/release/lsdogXG/asutools?style=flat-square" alt="release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/lsdogXG/asutools?style=flat-square" alt="license"></a>
+  <img src="https://img.shields.io/badge/macOS-11%2B-black?style=flat-square&logo=apple" alt="macOS 11+">
+  <img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12+">
+</p>
+
+<p align="center">
+  <img src="docs/screenshot.png" alt="asuTools 主界面" width="720">
+</p>
 
 ---
 
@@ -28,7 +42,12 @@ asuTools 只做一件事：**作为一个干净的、可配置的、视觉极简
 
 ## 截图
 
-主窗口（iTerm 风暗色）和环境管理对话框分别见 `/tmp/asutools-shots/v0.png` 和 `settings.png`（生成命令：`uv run python scripts/screenshot.py`）
+主界面见上方头图。本地重新生成截图：
+
+```bash
+uv run python scripts/screenshot.py            # 主窗口
+uv run python scripts/screenshot_settings.py   # 设置 → 环境
+```
 
 ## 启动
 
