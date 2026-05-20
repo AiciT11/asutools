@@ -52,9 +52,18 @@ def build_dmg(app_path: Path) -> Path:
 
 
 def main() -> None:
-    user_app = Path.home() / "Applications" / f"{APP_NAME}.app"
-    sys_app = Path("/Applications") / f"{APP_NAME}.app"
-    app_path = user_app if user_app.exists() else sys_app
+    # Prefer PyInstaller output (self-contained, ~80MB), fall back to installed copies.
+    candidates = [
+        DIST_DIR / f"{APP_NAME}.app",
+        Path.home() / "Applications" / f"{APP_NAME}.app",
+        Path("/Applications") / f"{APP_NAME}.app",
+    ]
+    app_path = next((p for p in candidates if p.exists()), None)
+    if app_path is None:
+        raise SystemExit(
+            "找不到 asuTools.app。先跑 scripts/make_app.py 或 scripts/build_release.py"
+        )
+    print(f"打包来源: {app_path}")
     out = build_dmg(app_path)
     size_mb = out.stat().st_size / (1024 * 1024)
     print(f"wrote: {out}  ({size_mb:.2f} MB)")

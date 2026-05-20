@@ -15,6 +15,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pillow>=12.2.0",   # icon generation (scripts/make_icon.py only)
+    "pyinstaller>=6.20.0",
 ]
 
 [project.scripts]
