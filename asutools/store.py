@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -28,7 +29,12 @@ def _write(path: Path, data: Any) -> None:
 
 
 def load_tools() -> list[dict]:
-    return _read(TOOLS_JSON, [])
+    tools = _read(TOOLS_JSON, [])
+    # 展开 ~ 为实际 home 目录，支持跨用户迁移
+    for tool in tools:
+        if isinstance(tool.get("path"), str):
+            tool["path"] = os.path.expanduser(tool["path"])
+    return tools
 
 
 def save_tools(tools: list[dict]) -> None:
@@ -44,7 +50,12 @@ def save_categories(categories: list[dict]) -> None:
 
 
 def load_environments() -> dict:
-    return _read(ENVIRONMENTS_JSON, {"environments": [], "defaults": {}})
+    data = _read(ENVIRONMENTS_JSON, {"environments": [], "defaults": {}})
+    # 展开 ~ 为实际 home 目录，支持跨用户迁移
+    for env in data.get("environments", []):
+        if isinstance(env.get("path"), str):
+            env["path"] = os.path.expanduser(env["path"])
+    return data
 
 
 def save_environments(envs: dict) -> None:

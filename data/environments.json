@@ -1,0 +1,96 @@
+{
+  "environments": [
+    {
+      "id": "java-java-8-mac-1-8-0-421",
+      "name": "Java 8 (TH_Tools bundled)",
+      "type": "java",
+      "path": "~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home",
+      "version": "1.8.0_421",
+      "source": "auto",
+      "tags": [
+        "bundled",
+        "javafx"
+      ],
+      "javafx": true
+    },
+    {
+      "id": "java-java-11-mac-11-0-24",
+      "name": "Java 11 (TH_Tools bundled)",
+      "type": "java",
+      "path": "~/Workspace/security/tools/TH_Tools/Java_path/Java_11_Mac/Contents/Home",
+      "version": "11.0.24",
+      "source": "auto",
+      "tags": [
+        "bundled"
+      ],
+      "javafx": false
+    },
+    {
+      "id": "py-brew-3-12",
+      "name": "Python 3.12 (brew)",
+      "type": "python",
+      "path": "/opt/homebrew/bin/python3.12",
+      "version": "3.12",
+      "source": "auto",
+      "tags": [
+        "brew"
+      ]
+    },
+    {
+      "id": "th-python-3-12",
+      "name": "Python 3.12 (TH_Tools bundled, +PyQt5)",
+      "type": "python",
+      "path": "~/Workspace/security/tools/TH_Tools/python_runtime/bin/python3.12",
+      "version": "3.12",
+      "source": "user",
+      "tags": [
+        "bundled",
+        "pyqt5",
+        "node_vm2"
+      ]
+    },
+    {
+      "id": "java-temurin-8",
+      "name": "Java 8 (Temurin 1.8.0_482)",
+      "type": "java",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home",
+      "version": "1.8.0_482",
+      "source": "auto",
+      "tags": [
+        "system",
+        "temurin"
+      ],
+      "javafx": false
+    },
+    {
+      "id": "java-temurin-11",
+      "name": "Java 11 (Temurin 11.0.30)",
+      "type": "java",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home",
+      "version": "11.0.30",
+      "source": "auto",
+      "tags": [
+        "system",
+        "temurin"
+      ],
+      "javafx": false
+    },
+    {
+      "id": "java-temurin-17",
+      "name": "Java 17 (Temurin 17.0.18)",
+      "type": "java",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
+      "version": "17.0.18",
+      "source": "auto",
+      "tags": [
+        "system",
+        "temurin"
+      ],
+      "javafx": false
+    }
+  ],
+  "defaults": {
+    "java": "java-java-8-mac-1-8-0-421",
+    "python": "py-brew-3-12"
+  }
+}

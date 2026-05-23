@@ -149,6 +149,7 @@ class ToolDelegate(QStyledItemDelegate):
 
 class ToolGrid(QListView):
     launch_requested = pyqtSignal(dict)
+    detail_requested = pyqtSignal(dict)
     edit_requested = pyqtSignal(dict)
     delete_requested = pyqtSignal(dict)
     favorite_toggled = pyqtSignal(dict)
@@ -196,7 +197,7 @@ class ToolGrid(QListView):
     def _on_double(self, index: QModelIndex) -> None:
         tool = index.data(Qt.ItemDataRole.UserRole)
         if tool:
-            self.launch_requested.emit(tool)
+            self.detail_requested.emit(tool)
 
     def _show_menu(self, pos) -> None:
         idx = self.indexAt(pos)
@@ -229,7 +230,11 @@ class ToolGrid(QListView):
             }}
         """)
 
-        launch = QAction("启动     ↵", menu)
+        detail = QAction("查看详情     ↵↵", menu)
+        detail.triggered.connect(lambda: self.detail_requested.emit(tool))
+        menu.addAction(detail)
+
+        launch = QAction("启动", menu)
         launch.triggered.connect(lambda: self.launch_requested.emit(tool))
         menu.addAction(launch)
 

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "port-scan",
+    "name": "端口扫描",
+    "order": 1
+  },
+  {
+    "id": "subdomain",
+    "name": "子域名 / 资产发现",
+    "order": 2
+  },
+  {
+    "id": "fingerprint",
+    "name": "指纹 / 存活探测",
+    "order": 3
+  },
+  {
+    "id": "recon-misc",
+    "name": "爬虫 / 参数 / OSINT",
+    "order": 4
+  },
+  {
+    "id": "vuln-scan",
+    "name": "漏洞扫描器",
+    "order": 5
+  },
+  {
+    "id": "dir-fuzz",
+    "name": "目录 / 参数爆破",
+    "order": 6
+  },
+  {
+    "id": "sqli",
+    "name": "SQL 注入",
+    "order": 7
+  },
+  {
+    "id": "xss",
+    "name": "XSS 攻击",
+    "order": 8
+  },
+  {
+    "id": "ssti-cmdi",
+    "name": "模板注入 / 命令注入",
+    "order": 9
+  },
+  {
+    "id": "web-bypass",
+    "name": "Web 绕过 / 认证",
+    "order": 10
+  },
+  {
+    "id": "java-fw",
+    "name": "Java 中间件 / 框架漏洞",
+    "order": 11
+  },
+  {
+    "id": "deserialize",
+    "name": "反序列化利用",
+    "order": 12
+  },
+  {
+    "id": "cms-exploit",
+    "name": "CMS / OA 漏洞利用",
+    "order": 13
+  },
+  {
+    "id": "cve-exploit",
+    "name": "CVE PoC / 高危漏洞",
+    "order": 14
+  },
+  {
+    "id": "intranet-scan",
+    "name": "内网扫描 / 探测",
+    "order": 15
+  },
+  {
+    "id": "lateral",
+    "name": "横向移动",
+    "order": 16
+  },
+  {
+    "id": "domain-enum",
+    "name": "域信息收集",
+    "order": 17
+  },
+  {
+    "id": "domain-atk",
+    "name": "域攻击 / Kerberos",
+    "order": 18
+  },
+  {
+    "id": "domain-cred",
+    "name": "凭证获取 / 中继",
+    "order": 19
+  },
+  {
+    "id": "tunnel",
+    "name": "隧道 / 内网穿透",
+    "order": 20
+  },
+  {
+    "id": "privesc-linux",
+    "name": "Linux 提权",
+    "order": 21
+  },
+  {
+    "id": "privesc-win",
+    "name": "Windows 提权",
+    "order": 22
+  },
+  {
+    "id": "c2",
+    "name": "C2 框架",
+    "order": 23
+  },
+  {
+    "id": "webshell",
+    "name": "WebShell 管理",
+    "order": 24
+  },
+  {
+    "id": "post-exploit",
+    "name": "后渗透 / 权限维持",
+    "order": 25
+  },
+  {
+    "id": "password",
+    "name": "密码攻击 / 爆破",
+    "order": 26
+  },
+  {
+    "id": "cloud",
+    "name": "云安全 / 容器",
+    "order": 27
+  },
+  {
+    "id": "proxy",
+    "name": "抓包代理",
+    "order": 28
+  },
+  {
+    "id": "traffic",
+    "name": "流量分析",
+    "order": 29
+  },
+  {
+    "id": "android",
+    "name": "安卓分析",
+    "order": 30
+  },
+  {
+    "id": "reverse",
+    "name": "逆向工程",
+    "order": 31
+  },
+  {
+    "id": "pwn",
+    "name": "PWN / 漏洞利用开发",
+    "order": 32
+  },
+  {
+    "id": "forensics",
+    "name": "应急响应 / 取证",
+    "order": 33
+  },
+  {
+    "id": "code-audit",
+    "name": "代码审计 / SAST",
+    "order": 34
+  },
+  {
+    "id": "crypto",
+    "name": "密码学 / 编解码",
+    "order": 35
+  },
+  {
+    "id": "other",
+    "name": "其他工具",
+    "order": 36
+  }
+]

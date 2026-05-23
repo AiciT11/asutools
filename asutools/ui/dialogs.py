@@ -17,9 +17,11 @@ from PyQt6.QtWidgets import (
     QListWidgetItem,
     QMessageBox,
     QPushButton,
+    QScrollArea,
     QStyle,
     QStyledItemDelegate,
     QTabWidget,
+    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
@@ -473,3 +475,191 @@ class SettingsDialog(QDialog):
         store.save_environments(data)
         self._refresh_env_list()
         self.settings_changed.emit()
+
+
+class ToolDetailDialog(QDialog):
+    """双击工具卡片弹出的详情窗口：完整描述 + 命令示例 + 启动/编辑按钮。"""
+
+    launch_requested = pyqtSignal(dict)
+    edit_requested   = pyqtSignal(dict)
+
+    def __init__(self, th: dict, tool: dict, categories: list[dict], parent=None):
+        super().__init__(parent)
+        self._th   = th
+        self._tool = tool
+        self.setWindowTitle(f"工具详情 — {tool.get('name','')}")
+        self.resize(680, 520)
+        self.setMinimumSize(500, 380)
+        self._build(categories)
+        self.setStyleSheet(theme.qss(th))
+
+    def _build(self, categories: list[dict]) -> None:
+        t    = self._tool
+        th   = self._th
+        root = QVBoxLayout(self)
+        root.setContentsMargins(20, 16, 20, 16)
+        root.setSpacing(10)
+
+        # ── 标题行 ────────────────────────────────────────────────
+        title = QLabel(t.get("name", ""), self)
+        f = QFont(); f.setPointSize(17); f.setWeight(QFont.Weight.Bold)
+        title.setFont(f)
+        title.setStyleSheet(f"color: {th['text']};")
+        root.addWidget(title)
+
+        # ── 元信息行：分类 · 类型 · 标签 ──────────────────────────
+        cat_name = next(
+            (c["name"] for c in categories if c["id"] == t.get("category","")),
+            t.get("category", "")
+        )
+        ttype = (t.get("type") or "").upper()
+        tags  = "  ".join(f"#{tag}" for tag in t.get("tags", [])[:6])
+        meta_text = f"{cat_name}   [{ttype}]"
+        if tags:
+            meta_text += f"   {tags}"
+        meta = QLabel(meta_text, self)
+        meta.setWordWrap(True)
+        meta.setStyleSheet(f"color: {th['text_mute']}; font-size: 12px;")
+        root.addWidget(meta)
+
+        # ── 路径 ──────────────────────────────────────────────────
+        path_val = t.get("path", "")
+        if path_val:
+            path_row = QHBoxLayout()
+            path_row.setSpacing(6)
+            path_lbl = QLabel("路径:", self)
+            path_lbl.setStyleSheet(f"color: {th['text_mute']}; font-size: 12px;")
+            path_lbl.setFixedWidth(36)
+            path_row.addWidget(path_lbl)
+            path_val_lbl = QLabel(path_val, self)
+            path_val_lbl.setStyleSheet(
+                f"color: {th['accent']}; font-size: 12px; font-family: monospace;"
+            )
+            path_val_lbl.setTextInteractionFlags(
+                Qt.TextInteractionFlag.TextSelectableByMouse
+            )
+            path_val_lbl.setWordWrap(True)
+            path_row.addWidget(path_val_lbl, 1)
+
+            copy_btn = QPushButton("复制", self)
+            copy_btn.setFixedWidth(44)
+            copy_btn.setFixedHeight(22)
+            copy_btn.setStyleSheet(
+                f"font-size: 11px; padding: 0 6px;"
+                f"background:{th['bg_alt']}; color:{th['text_mute']};"
+                f"border: 1px solid {th['border']}; border-radius: 4px;"
+            )
+            copy_btn.clicked.connect(lambda: (
+                __import__("PyQt6.QtWidgets", fromlist=["QApplication"])
+                .QApplication.clipboard().setText(path_val)
+            ))
+            path_row.addWidget(copy_btn)
+            root.addLayout(path_row)
+
+        # ── 分隔线 ────────────────────────────────────────────────
+        sep = QWidget(self)
+        sep.setFixedHeight(1)
+        sep.setStyleSheet(f"background: {th['border']};")
+        root.addWidget(sep)
+
+        # ── 说明 + 命令区（可滚动）────────────────────────────────
+        desc_raw = t.get("description", "").strip()
+        desc_edit = QTextEdit(self)
+        desc_edit.setReadOnly(True)
+        desc_edit.setLineWrapMode(QTextEdit.LineWrapMode.WidgetWidth)
+
+        # 把「用法:」「常用命令:」后面的缩进行识别为代码块
+        lines = desc_raw.splitlines()
+        html_parts = []
+        in_code = False
+        for line in lines:
+            stripped = line.strip()
+            is_cmd = (
+                stripped.startswith("#") or
+                stripped.startswith("/") or
+                any(stripped.startswith(k) for k in
+                    ("nmap","sqlmap","nuclei","ffuf","gobuster","feroxbuster",
+                     "hashcat","john","hydra","frpc","frps","chisel","gost",
+                     "ligolo","netexec","nxc","evil-winrm","kerbrute","certipy",
+                     "bloodhound","responder","mitm6","bloodyad","pypykatz",
+                     "sstimap","dalfox","commix","xsstrike","byp4xx",
+                     "pacu","scout","prowler","trivy","semgrep","gitleaks",
+                     "frida","objection","jadx","apktool","r2","vol ",
+                     "yara","capa","binwalk","ROPgadget","one_gadget",
+                     "seccomp-tools","pwn ","checksec","impacket",
+                     "python","java","bash","./","~/","sudo","export",
+                     "searchsploit","msfconsole","sliver","msfvenom",
+                     "subfinder","amass","httpx","katana","naabu","masscan",
+                     "wafw00f","arjun","wpprobe","fscan","proxychains",
+                     "jwt_tool","xray","vshell","velociraptor","radare2"))
+            ) or line.startswith("  ") and stripped
+
+            if is_cmd:
+                if not in_code:
+                    html_parts.append(
+                        f'<div style="background:{th["bg_alt"]};'
+                        f'border-left:3px solid {th["accent"]};'
+                        f'border-radius:4px; padding:6px 10px; margin:3px 0;'
+                        f'font-family:monospace; font-size:12px; '
+                        f'color:{th["text"]}; white-space:pre-wrap;">'
+                    )
+                    in_code = True
+                html_parts.append(
+                    f'<span style="color:{th["text"]}">'
+                    + stripped.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+                    + "</span><br/>"
+                )
+            else:
+                if in_code:
+                    html_parts.append("</div>")
+                    in_code = False
+                if stripped:
+                    html_parts.append(
+                        f'<p style="margin:2px 0; color:{th["text_mute"]};">'
+                        + stripped.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+                        + "</p>"
+                    )
+        if in_code:
+            html_parts.append("</div>")
+
+        desc_edit.setHtml(
+            f'<div style="font-size:13px; color:{th["text"]}; '
+            f'background:{th["bg"]}; padding:4px;">'
+            + "".join(html_parts) + "</div>"
+        )
+        desc_edit.setStyleSheet(
+            f"background: {th['bg']}; color: {th['text']};"
+            f"border: 1px solid {th['border']}; border-radius: 6px; padding: 4px;"
+        )
+        root.addWidget(desc_edit, 1)
+
+        # ── 默认参数行 ─────────────────────────────────────────────
+        args = t.get("args", "").strip()
+        if args:
+            args_lbl = QLabel(f"默认参数:  {args}", self)
+            args_lbl.setStyleSheet(
+                f"color:{th['text_dim']}; font-size:11px; font-family:monospace;"
+            )
+            args_lbl.setTextInteractionFlags(
+                Qt.TextInteractionFlag.TextSelectableByMouse
+            )
+            root.addWidget(args_lbl)
+
+        # ── 按钮行 ────────────────────────────────────────────────
+        btn_row = QHBoxLayout()
+        btn_row.addStretch(1)
+
+        edit_btn = QPushButton("编辑", self)
+        edit_btn.clicked.connect(lambda: (self.edit_requested.emit(t), self.accept()))
+        btn_row.addWidget(edit_btn)
+
+        launch_btn = QPushButton("启动", self)
+        launch_btn.setObjectName("primary")
+        launch_btn.clicked.connect(lambda: (self.launch_requested.emit(t), self.accept()))
+        btn_row.addWidget(launch_btn)
+
+        close_btn = QPushButton("关闭", self)
+        close_btn.clicked.connect(self.reject)
+        btn_row.addWidget(close_btn)
+
+        root.addLayout(btn_row)

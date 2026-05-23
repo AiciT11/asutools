@@ -61,13 +61,29 @@ class MainWindow(QMainWindow):
         root_layout.setContentsMargins(0, 0, 0, 0)
         root_layout.setSpacing(0)
 
-        # --- Top bar: search + buttons ---
+        # --- Top bar: proxy + search + buttons ---
         topbar = QFrame(self)
         topbar.setObjectName("topbar")
         topbar.setFixedHeight(48)
         tl = QHBoxLayout(topbar)
         tl.setContentsMargins(16, 8, 16, 8)
         tl.setSpacing(8)
+
+        # 代理输入框（左侧）
+        proxy_label = QLabel("代理", self)
+        proxy_label.setObjectName("statusLabel")
+        tl.addWidget(proxy_label)
+
+        self.proxy_input = QLineEdit(self)
+        self.proxy_input.setObjectName("proxyInput")
+        self.proxy_input.setFixedWidth(200)
+        self.proxy_input.setPlaceholderText("直连  (如 socks5://127.0.0.1:7890)")
+        saved_proxy = store.load_settings().get("proxy", "")
+        self.proxy_input.setText(saved_proxy)
+        self.proxy_input.textChanged.connect(self._on_proxy_changed)
+        tl.addWidget(self.proxy_input)
+
+        tl.addSpacing(8)
 
         self.search_input = QLineEdit(self)
         self.search_input.setObjectName("searchInput")
@@ -102,6 +118,7 @@ class MainWindow(QMainWindow):
         # --- Tool list (full width, grid layout) ---
         self.tool_grid = ToolGrid(self.theme, self)
         self.tool_grid.launch_requested.connect(self._on_launch)
+        self.tool_grid.detail_requested.connect(self._on_detail_tool)
         self.tool_grid.edit_requested.connect(self._on_edit_tool)
         self.tool_grid.delete_requested.connect(self._on_delete_tool)
         self.tool_grid.favorite_toggled.connect(self._on_toggle_favorite)
@@ -304,6 +321,26 @@ class MainWindow(QMainWindow):
         self._refresh_list()
         self._update_status()
 
+    def _on_proxy_changed(self, text: str) -> None:
+        settings = store.load_settings()
+        settings["proxy"] = text.strip()
+        store.save_settings(settings)
+        self._update_proxy_status()
+
+    def _update_proxy_status(self) -> None:
+        proxy = store.load_settings().get("proxy", "").strip()
+        if proxy:
+            self.status_label.setText(f"代理: {proxy}")
+        else:
+            self.status_label.setText("直连模式")
+
+    def _on_detail_tool(self, tool: dict) -> None:
+        from .dialogs import ToolDetailDialog
+        dlg = ToolDetailDialog(self.theme, tool, self.categories, self)
+        dlg.launch_requested.connect(self._on_launch)
+        dlg.edit_requested.connect(self._on_edit_tool)
+        dlg.exec()
+
     def _on_launch(self, tool: dict) -> None:
         ok, msg = launcher.launch(tool)
         self.status_label.setText(msg)
@@ -416,7 +453,9 @@ class MainWindow(QMainWindow):
     def _update_status(self) -> None:
         n = getattr(self, "_last_filtered_count", len(self.tools))
         total = len(self.tools)
-        self.status_label.setText(f"{n} / {total} 个工具")
+        proxy = store.load_settings().get("proxy", "").strip()
+        proxy_hint = f"  代理: {proxy}" if proxy else "  直连"
+        self.status_label.setText(f"{n} / {total} 个工具{proxy_hint}")
         envs = self.environments.get("environments", [])
         defaults = self.environments.get("defaults", {})
         py_id = defaults.get("python", "")

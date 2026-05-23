@@ -1,4 +1,4 @@
-"""Tool launcher: dispatch by tool.type, with env selection."""
+"""Tool launcher: dispatch by tool.type, with env selection and proxy control."""
 import shlex
 import subprocess
 import webbrowser
@@ -35,16 +35,51 @@ def _java_bin(env: dict) -> str:
     return str(Path(env["path"]) / "bin" / "java")
 
 
+def _iterm_available() -> bool:
+    return Path("/Applications/iTerm.app").exists()
+
+
+def _escape_for_applescript(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+def _proxy_prefix() -> str:
+    """返回 shell 代理设置前缀串，注入到每条终端命令前。
+    有代理时 export，无代理时 unset 确保直连。"""
+    proxy = store.load_settings().get("proxy", "").strip()
+    vars_ = "HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy"
+    if proxy:
+        exports = " ".join(
+            f'{v}={shlex.quote(proxy)}'
+            for v in vars_.split()
+        )
+        return f"export {exports} && "
+    # 显式 unset，防止 shell 环境变量残留影响工具
+    return f"unset {vars_} 2>/dev/null; "
+
+
 def _run_in_terminal(cmd: str, cwd: str | None = None) -> None:
-    """Run a shell command in a new Terminal.app window so the user can see output."""
+    """Run a shell command in a new terminal window (iTerm2 preferred, fallback Terminal.app)."""
     cd = f"cd {shlex.quote(cwd)} && " if cwd else ""
-    full = f"{cd}{cmd}"
-    script = (
-        'tell application "Terminal"\n'
-        '  activate\n'
-        f'  do script "{full.replace(chr(92), chr(92) + chr(92)).replace(chr(34), chr(92) + chr(34))}"\n'
-        'end tell'
-    )
+    full = f"{_proxy_prefix()}{cd}{cmd}"
+    escaped = _escape_for_applescript(full)
+    if _iterm_available():
+        script = (
+            'tell application "iTerm"\n'
+            '  activate\n'
+            '  create window with default profile\n'
+            '  tell current session of current window\n'
+            f'    write text "{escaped}"\n'
+            '  end tell\n'
+            'end tell'
+        )
+    else:
+        script = (
+            'tell application "Terminal"\n'
+            '  activate\n'
+            f'  do script "{escaped}"\n'
+            'end tell'
+        )
     subprocess.Popen(["osascript", "-e", script])
 
 

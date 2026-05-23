@@ -22,3 +22,16 @@ Thumbs.db
 
 # Runtime
 *.log
+
+# Runtime/tool dirs
+logs/
+conf/
+katana/
+naabu/
+subfinder/
+.nuclei-config/
+.uncover-config/
+shell.txt
+config.properties
+ligolo-ng.yaml
+scripts/verify_result.json
